@@ -1,0 +1,109 @@
+#login-page{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.login-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-header-text{
+	font-size: 3rem;
+}
+
+#login-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+/* ---------------------------------------------------------------- */
+/* Media queries */
+/* ---------------------------------------------------------------- */
+/* Landscape height */
+@media(max-height: 650px) and (orientation: landscape){
+	#login-page{
+		margin: 2rem auto 5rem auto;
+	}
+}
+@media(max-height: 550px) and (orientation: landscape){
+	.login-header-text{
+		font-size: 2.5rem;
+	}
+}
+@media(max-height: 500px) and (orientation: landscape){
+	.login-header-text{
+		font-size: 2rem;
+	}
+	#login-form input{
+		margin: 0.5rem;
+		padding: 0.25rem 0.5rem;
+	}
+	#login-form button{
+		margin: 0.5rem;
+		padding: 0.35rem 0.5rem;
+	}
+}
+@media(max-height: 400px) and (orientation: landscape){
+	#login-page{
+		margin: 3rem auto 5rem auto;
+	}
+	.login-link-text{
+		margin: 0.5rem;
+	}
+}
+@media(max-height: 350px) and (orientation: landscape){
+	.login-header-text{
+		font-size: 1.5rem;
+	}
+	#login-form input{
+		margin: 0.35rem;
+		padding: 0.2rem 0.25rem;
+	}
+	#login-form button{
+		margin: 0.35rem 0;
+		padding: 0.3rem 0.5rem;
+	}
+}
+
+/* Portrait width */
+@media(max-width: 650px) and (orientation: portrait){
+	.login-header-text{
+		font-size: 2.5rem;
+	}
+	#login-form{
+		width: 90%;
+	}
+}
+@media(max-width: 500px) and (orientation: portrait){
+	.login-header-text{
+		font-size: 2rem;
+	}
+}
+@media(max-width: 400px) and (orientation: portrait){
+	.login-header-text{
+		font-size: 1.75rem;
+	}
+}
+@media(max-width: 375px) and (orientation: portrait){
+	.login-header-text{
+		font-size: 1.5rem;
+	}
+	#login-form input{
+		margin: 0.5rem;
+		padding: 0.25rem 0.5rem;
+		font-size: 1rem;
+	}
+	#login-form button{
+		width: 102.5%;
+		margin: 0.5rem 0;
+		padding: 0.35rem 0rem;
+		font-size: 1rem;
+	}
+}

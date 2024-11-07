@@ -1,0 +1,28 @@
+{
+  "name": "did-i-watch-that",
+  "version": "1.0.0",
+  "description": "A web app to help TV watchers keep track of which episodes of a show they have already watched.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/app.js",
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
+  },
+  "author": "Zach Steinberg",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.1",
+    "morgan": "^1.10.0",
+    "sanitize-html": "^2.13.0"
+  }
+}
