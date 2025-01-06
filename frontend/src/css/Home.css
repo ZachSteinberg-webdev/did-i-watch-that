@@ -66,6 +66,22 @@
 	align-items: center;
 }
 
+.project-guest-credentials-container{
+	margin: 1rem;
+	border: var(--border-global);
+	border-radius: var(--border-radius-global);
+	padding: 0.6em 1.2em;
+	font-size: 1rem;
+	font-weight: 500;
+	font-family: inherit;
+	color: var(--font-color);
+	background-color: var(--button-background-color);
+}
+.project-guest-credentials-header{
+	margin: 0;
+	padding: 0;
+}
+
 /* ---------------------------------------------------------------- */
 /* Media queries */
 /* ---------------------------------------------------------------- */

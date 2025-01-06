@@ -54,6 +54,27 @@ export default function Login(){
 						Not registered yet? Register <Link to='/register' className='register-link'>here</Link>.
 					</p>
 				</div>
+				<div className="project-guest-credentials-container">
+					<p className="project-guest-credentials-header">
+						<b>Guest credentials</b>
+					</p>
+					<div className="project-guest-credentials">
+						<div>
+							<i>Username: </i>
+						</div>
+						<div>
+							<code>guest@guest.com</code>
+						</div>
+					</div>
+					<div className="project-guest-credentials">
+						<div>
+							<i>Password: </i>
+						</div>
+						<div>
+							<code>guestpassword</code>
+						</div>
+					</div>
+				</div>
 			</div>
 			<Footer/>
 		</>
