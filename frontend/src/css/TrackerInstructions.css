@@ -1,175 +1,191 @@
-.tracker-instructions-backdrop{
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	height: 100%;
-	width: 100%;
-	background-color: transparent;
-	position: absolute;
-	top: 0%;
-	bottom: -200%;
-	left: 0%;
-	right: 0%;
-	z-index: 10;
-	transition: bottom 0.75s cubic-bezier(.58,-0.83,.55,1.38) 0.3s, background-color 0.3s linear, backdrop-filter 0.3s linear, -webkit-backdrop-filter 0.3s linear;
+.tracker-instructions-backdrop {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0%;
+  bottom: -200%;
+  left: 0%;
+  right: 0%;
+  z-index: 10;
+  transition:
+    bottom 0.75s cubic-bezier(0.58, -0.83, 0.55, 1.38) 0.3s,
+    background-color 0.3s linear,
+    backdrop-filter 0.3s linear,
+    -webkit-backdrop-filter 0.3s linear;
 }
-.show-add-instructions-backdrop-show{
-	background-color: var(--modal-backdrop-background-color);
-	bottom: 0%;
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-	transition: bottom 0.75s cubic-bezier(.76,-0.49,.28,1.77), background-color 0.5s linear 0.75s, backdrop-filter 0.5s linear 0.75s, -webkit-backdrop-filter 0.5s linear 0.75s;
+.show-add-instructions-backdrop-show {
+  background-color: var(--modal-backdrop-background-color);
+  bottom: 0%;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition:
+    bottom 0.75s cubic-bezier(0.76, -0.49, 0.28, 1.77),
+    background-color 0.5s linear 0.75s,
+    backdrop-filter 0.5s linear 0.75s,
+    -webkit-backdrop-filter 0.5s linear 0.75s;
 }
-.tracked-shows-instructions-backdrop-show{
-	background-color: var(--modal-backdrop-background-color);
-	bottom: 0%;
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-	transition: bottom 0.75s cubic-bezier(.76,-0.49,.28,1.77), background-color 0.5s linear 0.75s, backdrop-filter 0.5s linear 0.75s, -webkit-backdrop-filter 0.5s linear 0.75s;
+.tracked-shows-instructions-backdrop-show {
+  background-color: var(--modal-backdrop-background-color);
+  bottom: 0%;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition:
+    bottom 0.75s cubic-bezier(0.76, -0.49, 0.28, 1.77),
+    background-color 0.5s linear 0.75s,
+    backdrop-filter 0.5s linear 0.75s,
+    -webkit-backdrop-filter 0.5s linear 0.75s;
 }
-.tracked-show-instructions-backdrop-show{
-	background-color: var(--modal-backdrop-background-color);
-	bottom: 0%;
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-	transition: bottom 0.75s cubic-bezier(.76,-0.49,.28,1.77), background-color 0.5s linear 0.75s, backdrop-filter 0.5s linear 0.75s, -webkit-backdrop-filter 0.5s linear 0.75s;
+.tracked-show-instructions-backdrop-show {
+  background-color: var(--modal-backdrop-background-color);
+  bottom: 0%;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition:
+    bottom 0.75s cubic-bezier(0.76, -0.49, 0.28, 1.77),
+    background-color 0.5s linear 0.75s,
+    backdrop-filter 0.5s linear 0.75s,
+    -webkit-backdrop-filter 0.5s linear 0.75s;
 }
-.tracker-instructions-container{
-	padding: 1rem 2rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	/* height: 100%; */
-	max-width: 60%;
-	max-height: 80%;
-	background-color: var(--modal-background-color);
-	border: var(--border-global);
-	border-radius: var(--border-radius-global);
-	box-sizing: border-box;
+.tracker-instructions-container {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: 100%; */
+  max-width: 60%;
+  max-height: 80%;
+  background-color: var(--modal-background-color);
+  border: var(--border-global);
+  border-radius: var(--border-radius-global);
+  box-sizing: border-box;
 }
-.tracker-instructions{
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	font-size: 1.25rem;
+.tracker-instructions {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.25rem;
 }
-.tracker-instructions-header{
-	font-size: 1.75rem;
-	font-weight: bold;
-	margin: 1rem;
+.tracker-instructions-header {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 1rem;
 }
-.tracker-instructions-text-scrollbox-wrapper{
-	margin: 0;
-	overflow: hidden;
-	border: var(--border-global);
-	border-radius: var(--border-radius-global);
-	box-sizing: border-box;
+.tracker-instructions-text-scrollbox-wrapper {
+  margin: 0;
+  overflow: hidden;
+  border: var(--border-global);
+  border-radius: var(--border-radius-global);
+  box-sizing: border-box;
 }
-.tracker-instructions-text-scrollbox{
-	height: 100%;
-	margin: 0;
-	padding: 0 1rem;
-	background-color: var(--modal-section-background-color);
-	overflow-y: auto;
-	scrollbar-width: thin;
-	scrollbar-color: var(--scrollbar-style);
+.tracker-instructions-text-scrollbox {
+  height: 100%;
+  margin: 0;
+  padding: 0 1rem;
+  background-color: var(--modal-section-background-color);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-style);
 }
-.tracker-instructions-text-scrollbox::-webkit-scrollbar{
-	width: 0.25rem;
-	height: 0.25rem;
+.tracker-instructions-text-scrollbox::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
 }
-.tracker-instructions-text-scrollbox::-webkit-scrollbar-thumb{
-	background: var(--scrollbar-thumb);
-	border-radius: 0.25rem;
+.tracker-instructions-text-scrollbox::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 0.25rem;
 }
-.tracker-instructions-text-scrollbox::-webkit-scrollbar-track{
-	background: var(--scrollbar-track);
+.tracker-instructions-text-scrollbox::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
 }
-.tracker-instructions-text{
-	font-size: 1.25rem;
+.tracker-instructions-text {
+  font-size: 1.25rem;
 }
-.tracker-instructions-close-button{
-	width: 75%;
+.tracker-instructions-close-button {
+  width: 75%;
 }
-.italic{
-	font-style: italic;
+.italic {
+  font-style: italic;
 }
 
 /* ---------------------------------------------------------------- */
 /* Media queries */
 /* ---------------------------------------------------------------- */
 /* Landscape width */
-@media (max-width: 1300px) and (orientation: landscape){
-	.tracker-instructions-container{
-		width: unset;
-		height: unset;
-		max-width: 80%;
-	}
+@media (max-width: 1300px) and (orientation: landscape) {
+  .tracker-instructions-container {
+    width: unset;
+    height: unset;
+    max-width: 80%;
+  }
 }
-@media (max-width: 1100px) and (orientation: landscape){
-	.tracker-instructions-header{
-		margin: 0.5rem;
-		font-size: 1.5rem;
-	}
-	.tracker-instructions-text{
-		margin: 0.5rem;
-		font-size: 1rem;
-	}
-	.tracker-instructions-close-button{
-		margin: 0.5rem;
-		padding: 0.3em 0.8em;
-	}
+@media (max-width: 1100px) and (orientation: landscape) {
+  .tracker-instructions-header {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .tracker-instructions-text {
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+  .tracker-instructions-close-button {
+    margin: 0.5rem;
+    padding: 0.3em 0.8em;
+  }
 }
-@media(max-width: 700px) and (orientation: landscape){
-	.tracker-instructions-header{
-		margin: 0.5rem;
-		font-size: 1.25rem;
-	}
-	.tracker-instructions-text{
-		margin: 0.5rem;
-		font-size: 0.9rem;
-	}
-	.tracker-instructions-close-button{
-		margin: 0.5rem;
-		padding: 0.3em 0.8em;
-		font-size: 1rem;
-	}
+@media (max-width: 700px) and (orientation: landscape) {
+  .tracker-instructions-header {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+  }
+  .tracker-instructions-text {
+    margin: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .tracker-instructions-close-button {
+    margin: 0.5rem;
+    padding: 0.3em 0.8em;
+    font-size: 1rem;
+  }
 }
 /* Portrait width */
-@media(max-width: 650px) and (orientation: portrait){
-	.tracker-instructions-container{
-		max-width: 85%;
-	}
-	.tracker-instructions-header{
-		margin: 0.5rem;
-		font-size: 1.5rem;
-	}
-	.tracker-instructions-text{
-		margin: 0.5rem;
-		font-size: 1rem;
-	}
-	.tracker-instructions-close-button{
-		margin: 0.5rem;
-		padding: 0.3em 0.8em;
-	}
+@media (max-width: 650px) and (orientation: portrait) {
+  .tracker-instructions-container {
+    max-width: 85%;
+  }
+  .tracker-instructions-header {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .tracker-instructions-text {
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+  .tracker-instructions-close-button {
+    margin: 0.5rem;
+    padding: 0.3em 0.8em;
+  }
 }
-@media(max-width: 500px) and (orientation: portrait){
-	.tracker-instructions-header{
-		margin: 0.5rem;
-		font-size: 1.25rem;
-	}
-	.tracker-instructions-text{
-		margin: 0.5rem;
-		font-size: 0.9rem;
-	}
-	.tracker-instructions-close-button{
-		margin: 0.5rem;
-		padding: 0.3em 0.8em;
-		font-size: 1rem;
-	}
+@media (max-width: 500px) and (orientation: portrait) {
+  .tracker-instructions-header {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+  }
+  .tracker-instructions-text {
+    margin: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .tracker-instructions-close-button {
+    margin: 0.5rem;
+    padding: 0.3em 0.8em;
+    font-size: 1rem;
+  }
 }
