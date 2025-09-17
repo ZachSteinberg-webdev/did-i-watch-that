@@ -26,8 +26,7 @@ exports.register = async (req, res, next) => {
     const user = await User.create(req.body);
     generateToken(user, 201, res); // generateToken handles the res.status().cookie().json() call
   } catch (err) {
-    console.log("Error from backend register route", err);
-    next(err);
+    return next(err);
   }
 };
 
@@ -92,7 +91,7 @@ exports.singleUser = async (req, res, next) => {
       user,
     });
   } catch (err) {
-    next(
+    return next(
       new ErrorResponse([`User with id ${req.params.id} does not exist.`], 404),
     );
   }
@@ -137,8 +136,7 @@ exports.updateUser = async (req, res, next) => {
         user,
       });
     } catch (err) {
-      console.log("Error from backend updateUser route", err);
-      next(err);
+      return next(err);
     }
   } else {
     res.status(200).json({
@@ -191,11 +189,15 @@ exports.updatePassword = async (req, res, next) => {
       await user.save();
       generateToken(user, 201, res); // generateToken handles the res.status().cookie().json() call
     } catch (err) {
-      console.log("Password update error in backend updatePassword");
-      next(err);
+      return next(err);
     }
   } else {
-    console.log("Unknown error in backend updatePassword");
+    return next(
+      new ErrorResponse(
+        ["Unable to update password. Please try again later."],
+        500,
+      ),
+    );
   }
 };
 
@@ -212,9 +214,11 @@ exports.toggleDarkMode = async (req, res, next) => {
     await user.save();
     res.status(200).json({ success: true, user });
   } catch (err) {
-    console.log(
-      "User dark mode toggle failed in backend toggleDarkMode controller",
-      err,
+    return next(
+      new ErrorResponse(
+        ["We couldn't update your display preference. Please try again."],
+        500,
+      ),
     );
   }
 };
@@ -245,51 +249,45 @@ exports.migrateGuestData = async (req, res, next) => {
     for (const showIdString of Array.from(unifiedShowIds)) {
       const tvmazeId = Number(showIdString);
       if (Number.isNaN(tvmazeId)) {
-        console.log(
-          `Skipping guest migration for invalid show id ${showIdString}`,
+        return next(
+          new ErrorResponse(
+            [
+              `Guest migration failed because show id "${showIdString}" is invalid.`,
+            ],
+            400,
+          ),
         );
-        continue;
       }
-      try {
-        const tvmazeResponse = await axios.get(
-          `https://api.tvmaze.com/shows/${tvmazeId}`,
-        );
-        const showData = tvmazeResponse.data;
-        showData.id = showData.id || tvmazeId;
-        await addShowForUser(userId, showData);
-        const watchedEpisodeIdsRaw =
-          watchedEpisodesMap[showIdString] ||
-          watchedEpisodesMap[tvmazeId] ||
-          watchedEpisodesMap[String(tvmazeId)] ||
-          [];
-        if (
-          Array.isArray(watchedEpisodeIdsRaw) &&
-          watchedEpisodeIdsRaw.length > 0
-        ) {
-          const watchedEpisodeIds = watchedEpisodeIdsRaw
-            .map((id) => Number(id))
-            .filter((id) => !Number.isNaN(id));
-          if (watchedEpisodeIds.length > 0) {
-            const episodes = await Episode.find({
-              episodeId: { $in: watchedEpisodeIds },
-            });
-            for (const episode of episodes) {
-              if (
-                !episode.usersWhoHaveWatched.some(
-                  (userObjectId) => String(userObjectId) === String(userId),
-                )
-              ) {
-                episode.usersWhoHaveWatched.push(userId);
-                await episode.save();
-              }
+      const tvmazeResponse = await axios.get(
+        `https://api.tvmaze.com/shows/${tvmazeId}`,
+      );
+      const showData = tvmazeResponse.data;
+      showData.id = showData.id || tvmazeId;
+      await addShowForUser(userId, showData);
+      const watchedEpisodeIdsRaw =
+        watchedEpisodesMap[showIdString] ||
+        watchedEpisodesMap[tvmazeId] ||
+        watchedEpisodesMap[String(tvmazeId)] ||
+        [];
+      if (Array.isArray(watchedEpisodeIdsRaw) && watchedEpisodeIdsRaw.length > 0) {
+        const watchedEpisodeIds = watchedEpisodeIdsRaw
+          .map((id) => Number(id))
+          .filter((id) => !Number.isNaN(id));
+        if (watchedEpisodeIds.length > 0) {
+          const episodes = await Episode.find({
+            episodeId: { $in: watchedEpisodeIds },
+          });
+          for (const episode of episodes) {
+            if (
+              !episode.usersWhoHaveWatched.some(
+                (userObjectId) => String(userObjectId) === String(userId),
+              )
+            ) {
+              episode.usersWhoHaveWatched.push(userId);
+              await episode.save();
             }
           }
         }
-      } catch (err) {
-        console.log(
-          `Guest migration sync error for show id ${showIdString}`,
-          err,
-        );
       }
     }
     const showsList = await ShowsList.findOne({
@@ -299,7 +297,6 @@ exports.migrateGuestData = async (req, res, next) => {
       .status(200)
       .json({ success: true, showsList: showsList || { shows: [] } });
   } catch (err) {
-    console.log("Guest data migration failed", err);
-    next(err);
+    return next(err);
   }
 };

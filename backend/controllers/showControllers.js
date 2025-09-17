@@ -681,7 +681,7 @@ exports.getShowDetails = async (req, res, next) => {
       show,
     });
   } catch (err) {
-    console.log("Error from backend getShowDetails route", err);
+    return next(err);
   }
 };
 
@@ -697,7 +697,7 @@ exports.getEpisodeDetails = async (req, res, next) => {
       episode,
     });
   } catch (err) {
-    console.log("Error from backend getEpisodeDetails route", err);
+    return next(err);
   }
 };
 
