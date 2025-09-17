@@ -1,355 +1,343 @@
 #tracker-tracked-show-container {
-  width: 1%;
-  height: 100%;
-  margin: 0 0 0 0.25rem;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 1;
-  justify-content: space-between;
-  align-items: center;
+	width: 1%;
+	height: 100%;
+	margin: 0 0 0 0.25rem;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	flex-shrink: 1;
+	justify-content: space-between;
+	align-items: center;
 }
 #tracker-tracked-show-header-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
 }
 .tracked-show-instructions-dummy-button {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0;
-  padding: 0;
-  border-radius: var(--border-radius-info-button);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: -7%;
-  visibility: hidden;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0;
+	padding: 0;
+	border-radius: var(--border-radius-info-button);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: -7%;
+	visibility: hidden;
 }
 #tracker-tracked-show-header {
-  font-size: 1.75rem;
-  font-weight: bold;
-  margin: 0 0.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+	font-size: 1.75rem;
+	font-weight: bold;
+	margin: 0 0.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 #tracked-show-instructions-open-button {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0;
-  padding: 0;
-  border-radius: var(--border-radius-info-button);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: -7%;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0;
+	padding: 0;
+	border-radius: var(--border-radius-info-button);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: -7%;
 }
 #tracked-show-instructions-open-button:hover {
-  border: var(--border-global);
+	border: var(--border-global);
 }
 .tracker-instructions-open-button-icon-font {
-  fill: var(--svg-font-color-info-button-instructions);
-  transition: fill 500ms;
+	fill: var(--svg-font-color-info-button-instructions);
+	transition: fill 500ms;
 }
-#tracked-show-instructions-open-button:hover
-  .tracker-instructions-open-button-icon-font {
-  fill: var(--svg-font-color-info-button-instructions-hovered);
-  transition: fill 500ms;
+#tracked-show-instructions-open-button:hover .tracker-instructions-open-button-icon-font {
+	fill: var(--svg-font-color-info-button-instructions-hovered);
+	transition: fill 500ms;
 }
-#tracked-show-instructions-open-button
-  svg
-  .tracked-show-instructions-open-button-path {
-  fill: var(--svg-fill-info-button-instructions);
-  transition: fill 500ms;
+#tracked-show-instructions-open-button svg .tracked-show-instructions-open-button-path {
+	fill: var(--svg-fill-info-button-instructions);
+	transition: fill 500ms;
 }
-#tracked-show-instructions-open-button:hover
-  svg
-  .tracked-show-instructions-open-button-path {
-  fill: var(--svg-fill-info-button-instructions-hovered);
-  transition: fill 500ms;
+#tracked-show-instructions-open-button:hover svg .tracked-show-instructions-open-button-path {
+	fill: var(--svg-fill-info-button-instructions-hovered);
+	transition: fill 500ms;
 }
 .tracked-show-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0.55rem auto;
-  padding: 0.65rem 0;
-  font-size: 1.25rem;
-  font-weight: 500;
-  width: 100%;
-  background-color: var(--secondary-background-color);
-  border-radius: var(--border-radius-global);
-  border: var(--border-global);
-  line-height: 1.5;
-  box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0.55rem auto;
+	padding: 0.65rem 0;
+	font-size: 1.25rem;
+	font-weight: 500;
+	width: 100%;
+	background-color: var(--secondary-background-color);
+	border-radius: var(--border-radius-global);
+	border: var(--border-global);
+	line-height: 1.5;
+	box-sizing: border-box;
 }
 .tracked-show-details-dummy-button {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0;
-  padding: 0;
-  border: var(--border-global);
-  border-radius: var(--border-radius-info-button);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: -3%;
-  visibility: hidden;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0;
+	padding: 0;
+	border: var(--border-global);
+	border-radius: var(--border-radius-info-button);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: -3%;
+	visibility: hidden;
 }
 .tracked-show-header-show-name {
-  margin: 0 0.5rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+	margin: 0 0.5rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .tracked-show-details-open-button {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0;
-  padding: 0;
-  border: var(--border-global);
-  border-radius: var(--border-radius-info-button);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: -3%;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0;
+	padding: 0;
+	border: var(--border-global);
+	border-radius: var(--border-radius-info-button);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: -3%;
 }
 .tracked-show-details-open-button:hover {
-  border: var(--border-global);
+	border: var(--border-global);
 }
 .tracker-details-open-button-icon-font {
-  fill: var(--svg-font-color-info-button-details);
-  transition: fill 500ms;
+	fill: var(--svg-font-color-info-button-details);
+	transition: fill 500ms;
 }
 .tracked-show-details-open-button:hover .tracker-details-open-button-icon-font {
-  fill: var(--svg-font-color-info-button-details-hovered);
-  transition: fill 500ms;
+	fill: var(--svg-font-color-info-button-details-hovered);
+	transition: fill 500ms;
 }
 .tracked-show-details-open-button svg .tracked-show-details-open-button-path {
-  fill: var(--svg-fill-info-button-details);
-  transition: fill 500ms;
+	fill: var(--svg-fill-info-button-details);
+	transition: fill 500ms;
 }
-.tracked-show-details-open-button:hover
-  svg
-  .tracked-show-details-open-button-path {
-  fill: var(--svg-fill-info-button-details-hovered);
-  transition: fill 500ms;
+.tracked-show-details-open-button:hover svg .tracked-show-details-open-button-path {
+	fill: var(--svg-fill-info-button-details-hovered);
+	transition: fill 500ms;
 }
 .tracker-tracked-show-list-container-wrapper {
-  width: 100%;
-  margin: 0 auto 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
-  border: var(--border-global);
-  border-radius: var(--border-radius-global);
-  flex-grow: 1;
-  flex-shrink: 1;
-  background-color: transparent;
-  transition: background-color 250ms ease-in-out;
-  box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	border: var(--border-global);
+	border-radius: var(--border-radius-global);
+	flex-grow: 1;
+	flex-shrink: 1;
+	background-color: transparent;
+	transition: background-color 250ms ease-in-out;
+	box-sizing: border-box;
 }
 .tracked-show-spinner {
-  width: 30%;
-  margin: auto;
+	width: 30%;
+	margin: auto;
 }
 .tracker-tracked-show-list-container {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: safe flex-start;
-  align-items: center;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: var(--secondary-background-color);
-  scrollbar-width: thin;
-  scrollbar-color: var(--scrollbar-style);
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: safe flex-start;
+	align-items: center;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: var(--secondary-background-color);
+	scrollbar-width: thin;
+	scrollbar-color: var(--scrollbar-style);
 }
 .tracker-tracked-show-list-container::-webkit-scrollbar {
-  width: 0.25rem;
-  height: 0.25rem;
+	width: 0.25rem;
+	height: 0.25rem;
 }
 .tracker-tracked-show-list-container::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb);
-  border-radius: 0.25rem;
+	background: var(--scrollbar-thumb);
+	border-radius: 0.25rem;
 }
 .tracker-tracked-show-list-container::-webkit-scrollbar-track {
-  background: var(--scrollbar-track);
+	background: var(--scrollbar-track);
 }
 .tracked-show-seasons {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
 }
 .tracked-show-season-row {
-  width: 100%;
-  min-height: 4rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-direction: row;
+	width: 100%;
+	min-height: 4rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-direction: row;
 }
 .tracked-show-season-row:first-of-type {
-  margin-top: 0.25rem;
+	margin-top: 0.25rem;
 }
 .tracked-show-season-row:last-of-type {
-  margin-bottom: 0.25rem;
+	margin-bottom: 0.25rem;
 }
 .tracked-show-season-number-container {
-  height: 100%;
-  margin-left: 0.5rem;
-  margin-right: 0.25rem;
-  white-space: nowrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.1rem;
-  font-weight: 600;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 12%;
+	height: 100%;
+	margin-left: 0.5rem;
+	margin-right: 0.25rem;
+	white-space: nowrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.1rem;
+	font-weight: 600;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 12%;
 }
 .tracked-show-season-number {
-  height: 100%;
-  width: 100%;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0.6em 0.5rem;
-  font-size: 1.15rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--button-background-color-darker);
+	height: 100%;
+	width: 100%;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0.6em 0.5rem;
+	font-size: 1.15rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--button-background-color-darker);
 }
 .tracked-show-season-episodes-container {
-  width: 90%;
-  margin-right: 0.25rem;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 88%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(11rem, auto));
-  justify-content: stretch;
-  align-content: stretch;
-  justify-items: stretch;
-  align-items: stretch;
+	width: 90%;
+	margin-right: 0.25rem;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 88%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(11rem, auto));
+	justify-content: stretch;
+	align-content: stretch;
+	justify-items: stretch;
+	align-items: stretch;
 }
 .tracked-show-season-episode-container {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-  position: relative;
-  flex-basis: 13%;
-  display: flex;
-  flex-direction: row;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	position: relative;
+	flex-basis: 13%;
+	display: flex;
+	flex-direction: row;
 }
 .tracked-show-season-episode-button {
-  height: 3.5rem;
-  margin: 0 0.25rem;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+	height: 3.5rem;
+	margin: 0 0.25rem;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 .tracked-show-episode-details-dummy-button {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0 0 0 0.5rem;
-  padding: 0;
-  border: var(--border-global);
-  border-radius: var(--border-radius-info-button);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0 0 0 0.5rem;
+	padding: 0;
+	border: var(--border-global);
+	border-radius: var(--border-radius-info-button);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
 }
 .tracked-show-season-episode-button-episode-number {
-  width: 75%;
-  margin: 0 0.25rem;
-  font-size: 1.15rem;
+	width: 75%;
+	margin: 0 0.25rem;
+	font-size: 1.15rem;
 }
 .tracked-show-episode-details-open-button {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0 0.5rem 0 0;
-  padding: 0;
-  border: var(--border-global);
-  border-radius: var(--border-radius-info-button);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: -3%;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0 0.5rem 0 0;
+	padding: 0;
+	border: var(--border-global);
+	border-radius: var(--border-radius-info-button);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: -3%;
 }
 .tracked-show-episode-details-open-button:hover {
-  border: var(--border-global);
+	border: var(--border-global);
 }
 .tracker-details-open-button-icon-font {
-  fill: var(--svg-font-color-info-button-details);
-  transition: fill 500ms;
+	fill: var(--svg-font-color-info-button-details);
+	transition: fill 500ms;
 }
-.tracked-show-episode-details-open-button:hover
-  .tracker-details-open-button-icon-font {
-  fill: var(--svg-font-color-info-button-details-hovered);
-  transition: fill 500ms;
+.tracked-show-episode-details-open-button:hover .tracker-details-open-button-icon-font {
+	fill: var(--svg-font-color-info-button-details-hovered);
+	transition: fill 500ms;
 }
-.tracked-show-episode-details-open-button
-  svg
-  .tracked-show-episode-details-open-button-path {
-  /* fill: var(--svg-fill-info-button-details); */
-  transition: fill 500ms;
+.tracked-show-episode-details-open-button svg .tracked-show-episode-details-open-button-path {
+	/* fill: var(--svg-fill-info-button-details); */
+	transition: fill 500ms;
 }
-.tracked-show-episode-details-open-button:hover
-  svg
-  .tracked-show-episode-details-open-button-path {
-  fill: var(--svg-fill-info-button-details-hovered);
-  transition: fill 500ms;
+.tracked-show-episode-details-open-button:hover svg .tracked-show-episode-details-open-button-path {
+	fill: var(--svg-fill-info-button-details-hovered);
+	transition: fill 500ms;
 }
 .tracked-show-season-episode-button-content {
-  pointer-events: none;
+	pointer-events: none;
 }
 .unwatched {
-  background-color: var(--button-background-color);
-  fill: var(--svg-fill-info-button-details);
-  transition:
-    background-color 1250ms,
-    fill 1250ms,
-    border-color 250ms;
+	background-color: var(--button-background-color);
+	fill: var(--svg-fill-info-button-details);
+	transition:
+		background-color 1250ms,
+		fill 1250ms,
+		border-color 250ms;
 }
 .watched {
-  background-color: var(--button-background-color-watched-episode);
-  fill: var(--svg-fill-info-button-details-watched);
-  transition:
-    background-color 1250ms,
-    fill 1250ms,
-    border-color 250ms;
+	background-color: var(--button-background-color-watched-episode);
+	fill: var(--svg-fill-info-button-details-watched);
+	transition:
+		background-color 1250ms,
+		fill 1250ms,
+		border-color 250ms;
 }
 .no-show-selected-text-container {
-  margin: auto 1rem;
+	margin: auto 1rem;
 }
 .no-show-selected-text {
-  margin: 1rem;
+	margin: 1rem;
 }
 
 /* ---------------------------------------------------------------- */
@@ -357,506 +345,503 @@
 /* ---------------------------------------------------------------- */
 /* Landscape width */
 @media (max-width: 1200px) and (orientation: landscape) {
-  .tracked-show-season-row {
-    flex-direction: column;
-  }
-  .tracked-show-season-number-container {
-    width: unset;
-    margin-right: 0.5rem;
-    flex-shrink: 1;
-    flex-grow: 1;
-  }
-  .tracked-show-season-number {
-    height: 3.5rem;
-    padding: 0 0.5rem;
-  }
-  .tracked-show-season-episodes-container {
-    width: auto;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
+	.tracked-show-season-row {
+		flex-direction: column;
+	}
+	.tracked-show-season-number-container {
+		width: unset;
+		margin-right: 0.5rem;
+		flex-shrink: 1;
+		flex-grow: 1;
+	}
+	.tracked-show-season-number {
+		height: 3.5rem;
+		padding: 0 0.5rem;
+	}
+	.tracked-show-season-episodes-container {
+		width: auto;
+		margin-left: 0.25rem;
+		margin-right: 0.25rem;
+	}
 }
 @media (max-width: 1200px) and (max-height: 500px) and (orientation: landscape) {
-  .tracked-show-season-number {
-    height: 2rem;
-  }
+	.tracked-show-season-number {
+		height: 2rem;
+	}
 }
 @media (max-width: 1100px) and (orientation: landscape) {
-  #tracker-tracked-show-header {
-    font-size: 1.5rem;
-  }
+	#tracker-tracked-show-header {
+		font-size: 1.5rem;
+	}
 }
 @media (max-width: 1025px) and (orientation: landscape) {
-  #tracker-tracked-show-header {
-    font-size: 1.25rem;
-  }
-  .tracked-show-header {
-    padding: 0.675rem 0.25rem;
-  }
-  .tracked-show-header-show-name {
-    font-size: 1.1rem;
-  }
+	#tracker-tracked-show-header {
+		font-size: 1.25rem;
+	}
+	.tracked-show-header {
+		padding: 0.675rem 0.25rem;
+	}
+	.tracked-show-header-show-name {
+		font-size: 1.1rem;
+	}
 }
 @media (max-width: 800px) and (orientation: landscape) {
-  #tracker-tracked-show-header {
-    font-size: 1.1rem;
-    letter-spacing: -1px;
-  }
-  .tracked-show-header {
-    height: 3.2rem;
-    margin: 0.5rem auto;
-    padding: 0;
-    flex-shrink: 0;
-  }
-  .tracked-show-header-show-name {
-    margin: 0 auto;
-    font-size: 1rem;
-  }
-  .tracked-show-details-open-button {
-    width: 1.75rem;
-    height: 100%;
-    bottom: 0%;
-    right: -2px;
-    border-left: none;
-    border-top-left-radius: 0rem;
-    border-bottom-left-radius: 0rem;
-    border-top-right-radius: var(--border-radius-global);
-    border-bottom-right-radius: var(--border-radius-global);
-    box-sizing: content-box;
-    background-color: #a7a7a7;
-  }
-  .tracked-show-details-open-button:hover {
-    border-left: none;
-  }
-  .tracked-show-details-open-button-svg {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-  .tracked-show-season-number {
-    font-size: 0.9rem;
-  }
-  .tracked-show-season-episode-button {
-    padding: 0;
-    border-right: none;
-  }
-  .tracked-show-season-episode-button-episode-number {
-    font-size: 0.9rem;
-  }
-  .tracked-show-episode-details-open-button {
-    width: 1.75rem;
-    height: 3.5rem;
-    margin: 0;
-    padding: 0;
-    bottom: 0%;
-    border-left: none;
-    border-top-left-radius: 0rem;
-    border-bottom-left-radius: 0rem;
-    border-top-right-radius: var(--border-radius-global);
-    border-bottom-right-radius: var(--border-radius-global);
-    background-color: var(--svg-fill-info-button-details);
-  }
-  .tracked-show-season-episode-button:hover
-    .tracked-show-episode-details-open-button {
-    border-color: var(--button-border-hover-color);
-  }
-  .tracked-show-episode-details-open-button:hover {
-    border-color: var(--button-border-hover-color);
-    border-left: none;
-  }
-  .tracked-show-episode-details-open-button-svg {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
+	#tracker-tracked-show-header {
+		font-size: 1.1rem;
+		letter-spacing: -1px;
+	}
+	.tracked-show-header {
+		height: 3.2rem;
+		margin: 0.5rem auto;
+		padding: 0;
+		flex-shrink: 0;
+	}
+	.tracked-show-header-show-name {
+		margin: 0 auto;
+		font-size: 1rem;
+	}
+	.tracked-show-details-open-button {
+		width: 1.75rem;
+		height: 100%;
+		bottom: 0%;
+		right: -2px;
+		border-left: none;
+		border-top-left-radius: 0rem;
+		border-bottom-left-radius: 0rem;
+		border-top-right-radius: var(--border-radius-global);
+		border-bottom-right-radius: var(--border-radius-global);
+		box-sizing: content-box;
+		background-color: #a7a7a7;
+	}
+	.tracked-show-details-open-button:hover {
+		border-left: none;
+	}
+	.tracked-show-details-open-button-svg {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
+	.tracked-show-season-number {
+		font-size: 0.9rem;
+	}
+	.tracked-show-season-episode-button {
+		padding: 0;
+		border-right: none;
+	}
+	.tracked-show-season-episode-button-episode-number {
+		font-size: 0.9rem;
+	}
+	.tracked-show-episode-details-open-button {
+		width: 1.75rem;
+		height: 3.5rem;
+		margin: 0;
+		padding: 0;
+		bottom: 0%;
+		border-left: none;
+		border-top-left-radius: 0rem;
+		border-bottom-left-radius: 0rem;
+		border-top-right-radius: var(--border-radius-global);
+		border-bottom-right-radius: var(--border-radius-global);
+		background-color: var(--svg-fill-info-button-details);
+	}
+	.tracked-show-season-episode-button:hover .tracked-show-episode-details-open-button {
+		border-color: var(--button-border-hover-color);
+	}
+	.tracked-show-episode-details-open-button:hover {
+		border-color: var(--button-border-hover-color);
+		border-left: none;
+	}
+	.tracked-show-episode-details-open-button-svg {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
 }
 @media (max-width: 650px) and (orientation: landscape) {
-  #tracker-tracked-show-header {
-    margin: 0 0.25rem;
-    font-size: 1rem;
-  }
-  .tracked-show-season-episodes-container {
-    grid-template-columns: repeat(auto-fill, minmax(9rem, auto));
-  }
+	#tracker-tracked-show-header {
+		margin: 0 0.25rem;
+		font-size: 1rem;
+	}
+	.tracked-show-season-episodes-container {
+		grid-template-columns: repeat(auto-fill, minmax(9rem, auto));
+	}
 }
 /* Landscape height */
 @media (max-height: 500px) and (orientation: landscape) {
-  .tracked-show-instructions-dummy-button {
-    width: 1.25rem;
-    height: 1.25rem;
-    bottom: 0%;
-  }
-  #tracked-show-instructions-open-button {
-    width: 1.25rem;
-    height: 1.25rem;
-    bottom: 0%;
-  }
-  .tracked-show-header {
-    height: 1.85rem;
-    margin: 0.525rem auto;
-    padding: 0;
-  }
-  .tracked-show-header-show-name {
-    margin: 0 auto;
-  }
-  .tracked-show-details-open-button {
-    width: 1.75rem;
-    height: 100%;
-    background-color: var(--svg-fill-info-button-details);
-    bottom: 0%;
-    right: -2px;
-    border-left: none;
-    border-top-left-radius: 0rem;
-    border-bottom-left-radius: 0rem;
-    border-top-right-radius: var(--border-radius-global);
-    border-bottom-right-radius: var(--border-radius-global);
-    box-sizing: content-box;
-  }
-  .tracked-show-details-open-button:hover {
-    border-left: none;
-  }
-  .tracked-show-details-open-button-svg {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-  .tracked-show-season-row:first-of-type {
-    margin-top: 0.25rem;
-  }
-  .tracked-show-season-number {
-    margin: 0.2rem 0 0.15rem 0;
-    padding: 0.2rem 0.5rem;
-  }
-  .tracked-show-season-episode-container {
-    margin-top: 0.3rem;
-    margin-bottom: 0.15rem;
-  }
-  .tracked-show-season-episode-button {
-    height: 2rem;
-    padding: 0;
-    border-right: none;
-  }
-  .tracked-show-episode-details-dummy-button {
-    width: 1.25rem;
-    height: 1.25rem;
-    margin: 0;
-  }
-  .tracked-show-episode-details-open-button {
-    width: 1.75rem;
-    height: 2rem;
-    margin: 0;
-    background-color: var(--svg-fill-info-button-details);
-    border-left: none;
-    border-top-left-radius: 0rem;
-    border-bottom-left-radius: 0rem;
-    border-top-right-radius: var(--border-radius-global);
-    border-bottom-right-radius: var(--border-radius-global);
-    bottom: 0%;
-  }
-  .tracked-show-season-episode-button:hover
-    .tracked-show-episode-details-open-button {
-    border-color: var(--button-border-hover-color);
-  }
-  .tracked-show-episode-details-open-button:hover {
-    border-color: var(--button-border-hover-color);
-    border-left: none;
-  }
-  .tracked-show-episode-details-open-button-svg {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
+	.tracked-show-instructions-dummy-button {
+		width: 1.25rem;
+		height: 1.25rem;
+		bottom: 0%;
+	}
+	#tracked-show-instructions-open-button {
+		width: 1.25rem;
+		height: 1.25rem;
+		bottom: 0%;
+	}
+	.tracked-show-header {
+		height: 1.85rem;
+		margin: 0.525rem auto;
+		padding: 0;
+	}
+	.tracked-show-header-show-name {
+		margin: 0 auto;
+	}
+	.tracked-show-details-open-button {
+		width: 1.75rem;
+		height: 100%;
+		background-color: var(--svg-fill-info-button-details);
+		bottom: 0%;
+		right: -2px;
+		border-left: none;
+		border-top-left-radius: 0rem;
+		border-bottom-left-radius: 0rem;
+		border-top-right-radius: var(--border-radius-global);
+		border-bottom-right-radius: var(--border-radius-global);
+		box-sizing: content-box;
+	}
+	.tracked-show-details-open-button:hover {
+		border-left: none;
+	}
+	.tracked-show-details-open-button-svg {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
+	.tracked-show-season-row:first-of-type {
+		margin-top: 0.25rem;
+	}
+	.tracked-show-season-number {
+		margin: 0.2rem 0 0.15rem 0;
+		padding: 0.2rem 0.5rem;
+	}
+	.tracked-show-season-episode-container {
+		margin-top: 0.3rem;
+		margin-bottom: 0.15rem;
+	}
+	.tracked-show-season-episode-button {
+		height: 2rem;
+		padding: 0;
+		border-right: none;
+	}
+	.tracked-show-episode-details-dummy-button {
+		width: 1.25rem;
+		height: 1.25rem;
+		margin: 0;
+	}
+	.tracked-show-episode-details-open-button {
+		width: 1.75rem;
+		height: 2rem;
+		margin: 0;
+		background-color: var(--svg-fill-info-button-details);
+		border-left: none;
+		border-top-left-radius: 0rem;
+		border-bottom-left-radius: 0rem;
+		border-top-right-radius: var(--border-radius-global);
+		border-bottom-right-radius: var(--border-radius-global);
+		bottom: 0%;
+	}
+	.tracked-show-season-episode-button:hover .tracked-show-episode-details-open-button {
+		border-color: var(--button-border-hover-color);
+	}
+	.tracked-show-episode-details-open-button:hover {
+		border-color: var(--button-border-hover-color);
+		border-left: none;
+	}
+	.tracked-show-episode-details-open-button-svg {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
 }
 @media (max-width: 800px) and (max-height: 500px) and (orientation: landscape) {
-  .tracked-show-header {
-    height: 1.75rem;
-    margin: 0.5rem auto;
-  }
-  .tracked-show-season-number {
-    padding: 0.25rem 0.5rem;
-  }
+	.tracked-show-header {
+		height: 1.75rem;
+		margin: 0.5rem auto;
+	}
+	.tracked-show-season-number {
+		padding: 0.25rem 0.5rem;
+	}
 }
 /* Portrait width */
 @media (max-width: 1200px) and (orientation: portrait) {
-  .tracked-show-season-row {
-    flex-direction: column;
-  }
-  .tracked-show-season-number-container {
-    width: unset;
-    margin-right: 0.5rem;
-    flex-shrink: 1;
-    flex-grow: 1;
-  }
-  .tracked-show-season-number {
-    height: 3.5rem;
-    margin: 0.25rem 0;
-    padding: 0 0.5rem;
-  }
-  .tracked-show-season-episodes-container {
-    width: auto;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
+	.tracked-show-season-row {
+		flex-direction: column;
+	}
+	.tracked-show-season-number-container {
+		width: unset;
+		margin-right: 0.5rem;
+		flex-shrink: 1;
+		flex-grow: 1;
+	}
+	.tracked-show-season-number {
+		height: 3.5rem;
+		margin: 0.25rem 0;
+		padding: 0 0.5rem;
+	}
+	.tracked-show-season-episodes-container {
+		width: auto;
+		margin-left: 0.25rem;
+		margin-right: 0.25rem;
+	}
 }
 @media (max-width: 1100px) and (orientation: portrait) {
-  #tracker-tracked-show-header {
-    font-size: 1.5rem;
-  }
+	#tracker-tracked-show-header {
+		font-size: 1.5rem;
+	}
 }
 @media (max-width: 1025px) and (orientation: portrait) {
-  #tracker-tracked-show-header {
-    font-size: 1.25rem;
-  }
-  .tracked-show-header-show-name {
-    font-size: 1.1rem;
-  }
+	#tracker-tracked-show-header {
+		font-size: 1.25rem;
+	}
+	.tracked-show-header-show-name {
+		font-size: 1.1rem;
+	}
 }
 @media (max-width: 800px) and (orientation: portrait) {
-  #tracker-tracked-show-header {
-    font-size: 1.15rem;
-    letter-spacing: -1px;
-  }
-  .tracked-show-instructions-dummy-button {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-  #tracked-show-instructions-open-button {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-  .tracked-show-header {
-    height: 3.15rem;
-    margin: 0.5rem auto;
-    padding: 0;
-    flex-shrink: 0;
-  }
-  .tracked-show-details-dummy-button {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-  .tracked-show-header-show-name {
-    margin: 0 auto;
-    font-size: 1rem;
-  }
-  .tracked-show-details-open-button {
-    width: 1.75rem;
-    height: 100%;
-    bottom: 0%;
-    right: -2px;
-    border-left: none;
-    border-top-left-radius: 0rem;
-    border-bottom-left-radius: 0rem;
-    border-top-right-radius: var(--border-radius-global);
-    border-bottom-right-radius: var(--border-radius-global);
-    box-sizing: content-box;
-    background-color: var(--svg-fill-info-button-details);
-  }
-  .tracked-show-details-open-button:hover {
-    border-left: none;
-  }
-  .tracked-show-details-open-button-svg {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-  .tracked-show-season-row:first-of-type {
-    margin-top: 0.25rem;
-  }
-  .tracked-show-season-number {
-    padding: 0.4rem 0.5rem;
-    font-size: 0.9rem;
-  }
-  .tracked-show-season-episode-container {
-    margin-top: 0.3rem;
-  }
-  .tracked-show-season-episode-button {
-    padding: 0;
-    border-right: none;
-  }
-  .tracked-show-episode-details-dummy-button {
-    width: 1.25rem;
-    height: 1.25rem;
-    margin: 0 0 0 0.25rem;
-  }
-  .tracked-show-season-episode-button-episode-number {
-    font-size: 0.9rem;
-  }
-  .tracked-show-episode-details-open-button {
-    width: 1.75rem;
-    height: 3.5rem;
-    margin: 0;
-    padding: 0;
-    bottom: 0%;
-    border-left: none;
-    border-top-left-radius: 0rem;
-    border-bottom-left-radius: 0rem;
-    border-top-right-radius: var(--border-radius-global);
-    border-bottom-right-radius: var(--border-radius-global);
-    background-color: var(--svg-fill-info-button-details);
-  }
-  .tracked-show-season-episode-button:hover
-    .tracked-show-episode-details-open-button {
-    border-color: var(--button-border-hover-color);
-  }
-  .tracked-show-episode-details-open-button:hover {
-    border-color: var(--button-border-hover-color);
-    border-left: none;
-  }
-  .tracked-show-episode-details-open-button-svg {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
+	#tracker-tracked-show-header {
+		font-size: 1.15rem;
+		letter-spacing: -1px;
+	}
+	.tracked-show-instructions-dummy-button {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
+	#tracked-show-instructions-open-button {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
+	.tracked-show-header {
+		height: 3.15rem;
+		margin: 0.5rem auto;
+		padding: 0;
+		flex-shrink: 0;
+	}
+	.tracked-show-details-dummy-button {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
+	.tracked-show-header-show-name {
+		margin: 0 auto;
+		font-size: 1rem;
+	}
+	.tracked-show-details-open-button {
+		width: 1.75rem;
+		height: 100%;
+		bottom: 0%;
+		right: -2px;
+		border-left: none;
+		border-top-left-radius: 0rem;
+		border-bottom-left-radius: 0rem;
+		border-top-right-radius: var(--border-radius-global);
+		border-bottom-right-radius: var(--border-radius-global);
+		box-sizing: content-box;
+		background-color: var(--svg-fill-info-button-details);
+	}
+	.tracked-show-details-open-button:hover {
+		border-left: none;
+	}
+	.tracked-show-details-open-button-svg {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
+	.tracked-show-season-row:first-of-type {
+		margin-top: 0.25rem;
+	}
+	.tracked-show-season-number {
+		padding: 0.4rem 0.5rem;
+		font-size: 0.9rem;
+	}
+	.tracked-show-season-episode-container {
+		margin-top: 0.3rem;
+	}
+	.tracked-show-season-episode-button {
+		padding: 0;
+		border-right: none;
+	}
+	.tracked-show-episode-details-dummy-button {
+		width: 1.25rem;
+		height: 1.25rem;
+		margin: 0 0 0 0.25rem;
+	}
+	.tracked-show-season-episode-button-episode-number {
+		font-size: 0.9rem;
+	}
+	.tracked-show-episode-details-open-button {
+		width: 1.75rem;
+		height: 3.5rem;
+		margin: 0;
+		padding: 0;
+		bottom: 0%;
+		border-left: none;
+		border-top-left-radius: 0rem;
+		border-bottom-left-radius: 0rem;
+		border-top-right-radius: var(--border-radius-global);
+		border-bottom-right-radius: var(--border-radius-global);
+		background-color: var(--svg-fill-info-button-details);
+	}
+	.tracked-show-season-episode-button:hover .tracked-show-episode-details-open-button {
+		border-color: var(--button-border-hover-color);
+	}
+	.tracked-show-episode-details-open-button:hover {
+		border-color: var(--button-border-hover-color);
+		border-left: none;
+	}
+	.tracked-show-episode-details-open-button-svg {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
 }
 @media (max-width: 650px) and (orientation: portrait) {
-  #tracker-tracked-show-header {
-    margin: 0 0.25rem;
-    font-size: 1rem;
-  }
-  .tracked-show-instructions-dummy-button {
-    bottom: -1%;
-  }
-  #tracked-show-instructions-open-button {
-    bottom: -1%;
-  }
-  .tracked-show-header {
-    height: 3.05rem;
-  }
+	#tracker-tracked-show-header {
+		margin: 0 0.25rem;
+		font-size: 1rem;
+	}
+	.tracked-show-instructions-dummy-button {
+		bottom: -1%;
+	}
+	#tracked-show-instructions-open-button {
+		bottom: -1%;
+	}
+	.tracked-show-header {
+		height: 3.05rem;
+	}
 }
 @media (max-width: 575px) and (orientation: portrait) {
-  #tracker-tracked-show-container {
-    margin: 0 0 0 0.25rem;
-  }
-  .tracked-show-header {
-    height: 3.2rem;
-  }
-  .tracked-show-season-row:first-of-type {
-    margin-top: 0.35rem;
-  }
-  .tracked-show-season-row {
-    margin: 0.085rem 0;
-  }
-  .tracked-show-season-number {
-    margin: 0.125rem 0 0.35rem 0;
-  }
-  .tracked-show-season-episodes-container {
-    grid-template-columns: repeat(auto-fill, minmax(125px, auto));
-  }
-  .tracked-show-episode-details-dummy-button {
-    display: none;
-  }
-  .tracked-show-season-episode-button-episode-number {
-    margin: 0 auto;
-  }
+	#tracker-tracked-show-container {
+		margin: 0 0 0 0.25rem;
+	}
+	.tracked-show-header {
+		height: 3.2rem;
+	}
+	.tracked-show-season-row:first-of-type {
+		margin-top: 0.35rem;
+	}
+	.tracked-show-season-row {
+		margin: 0.085rem 0;
+	}
+	.tracked-show-season-number {
+		margin: 0.125rem 0 0.35rem 0;
+	}
+	.tracked-show-season-episodes-container {
+		grid-template-columns: repeat(auto-fill, minmax(125px, auto));
+	}
+	.tracked-show-episode-details-dummy-button {
+		display: none;
+	}
+	.tracked-show-season-episode-button-episode-number {
+		margin: 0 auto;
+	}
 }
 @media (max-width: 500px) and (orientation: portrait) {
-  #tracker-tracked-show-container {
-    width: 1%;
-  }
-  .tracked-show-instructions-dummy-button {
-    display: none;
-  }
-  .tracked-show-details-dummy-button {
-    display: none;
-  }
-  .tracked-show-header-show-name {
-    max-width: 75%;
-  }
-  .tracked-show-season-episode-button {
-    padding-top: 0.275rem;
-    padding-bottom: 0.275rem;
-    justify-content: center;
-  }
+	#tracker-tracked-show-container {
+		width: 1%;
+	}
+	.tracked-show-instructions-dummy-button {
+		display: none;
+	}
+	.tracked-show-details-dummy-button {
+		display: none;
+	}
+	.tracked-show-header-show-name {
+		max-width: 75%;
+	}
+	.tracked-show-season-episode-button {
+		padding-top: 0.275rem;
+		padding-bottom: 0.275rem;
+		justify-content: center;
+	}
 }
 @media (max-width: 475px) and (orientation: portrait) {
-  .tracked-show-header {
-    height: 2rem;
-    border-right: var(--border-global);
-  }
-  .tracked-show-header-show-name {
-    max-width: 100%;
-    padding: 0 0.25rem;
-  }
-  .tracked-show-details-open-button {
-    display: none;
-  }
-  .tracked-show-season-row:first-of-type {
-    margin-top: 0.25rem;
-  }
-  .tracked-show-season-row {
-    margin: 0.25rem 0 0.25rem 0;
-  }
-  .tracked-show-season-number-container {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-  .tracked-show-season-number {
-    height: 2rem;
-    margin: 0;
-    padding: 0.35rem 0.5rem;
-  }
-  .tracked-show-season-episodes-container {
-    margin-top: 0;
-    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
-  }
-  .tracked-show-season-episode-container {
-    margin-top: 0.25rem;
-    margin-bottom: 0;
-  }
-  .tracked-show-season-episode-button {
-    height: 2rem;
-    margin: 0.0395rem 0;
-    padding-top: 0.365rem;
-    padding-bottom: 0.35rem;
-    border-right: var(--border-global);
-  }
-  .tracked-show-episode-details-dummy-button {
-    display: none;
-  }
-  .tracked-show-season-episode-button-episode-number {
-    margin: 0 auto;
-  }
-  .tracked-show-episode-details-open-button {
-    display: none;
-  }
+	.tracked-show-header {
+		height: 2rem;
+		border-right: var(--border-global);
+	}
+	.tracked-show-header-show-name {
+		max-width: 100%;
+		padding: 0 0.25rem;
+	}
+	.tracked-show-details-open-button {
+		display: none;
+	}
+	.tracked-show-season-row:first-of-type {
+		margin-top: 0.25rem;
+	}
+	.tracked-show-season-row {
+		margin: 0.25rem 0 0.25rem 0;
+	}
+	.tracked-show-season-number-container {
+		margin-left: 0.25rem;
+		margin-right: 0.25rem;
+	}
+	.tracked-show-season-number {
+		height: 2rem;
+		margin: 0;
+		padding: 0.35rem 0.5rem;
+	}
+	.tracked-show-season-episodes-container {
+		margin-top: 0;
+		grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+	}
+	.tracked-show-season-episode-container {
+		margin-top: 0.25rem;
+		margin-bottom: 0;
+	}
+	.tracked-show-season-episode-button {
+		height: 2rem;
+		margin: 0.0395rem 0;
+		padding-top: 0.365rem;
+		padding-bottom: 0.35rem;
+		border-right: var(--border-global);
+	}
+	.tracked-show-episode-details-dummy-button {
+		display: none;
+	}
+	.tracked-show-season-episode-button-episode-number {
+		margin: 0 auto;
+	}
+	.tracked-show-episode-details-open-button {
+		display: none;
+	}
 }
 @media (max-width: 450px) and (orientation: portrait) {
-  #tracked-show-instructions-open-button {
-    display: none;
-  }
+	#tracked-show-instructions-open-button {
+		display: none;
+	}
 }
 @media (max-width: 425px) and (orientation: portrait) {
-  #tracker-tracked-show-header {
-    font-size: 0.9rem;
-  }
-  .tracked-show-header-show-name {
-    font-size: 0.9rem;
-  }
-  .tracked-show-season-number {
-    padding: 0.35rem 0.5rem;
-    font-size: 0.75rem;
-    white-space: break-spaces;
-  }
-  .tracked-show-season-episode-button {
-    padding: 0.375rem 0.25rem;
-  }
-  .tracked-show-season-episode-button-episode-number {
-    font-size: 0.75rem;
-  }
+	#tracker-tracked-show-header {
+		font-size: 0.9rem;
+	}
+	.tracked-show-header-show-name {
+		font-size: 0.9rem;
+	}
+	.tracked-show-season-number {
+		padding: 0.35rem 0.5rem;
+		font-size: 0.75rem;
+		white-space: break-spaces;
+	}
+	.tracked-show-season-episode-button {
+		padding: 0.375rem 0.25rem;
+	}
+	.tracked-show-season-episode-button-episode-number {
+		font-size: 0.75rem;
+	}
 }
 @media (max-width: 375px) and (orientation: portrait) {
-  #tracker-tracked-show-header {
-    font-size: 0.75rem;
-  }
+	#tracker-tracked-show-header {
+		font-size: 0.75rem;
+	}
 }
 @media (max-width: 350px) and (orientation: portrait) {
-  .tracked-show-header-show-name {
-    font-size: 0.75rem;
-  }
-  .tracked-show-season-number {
-    padding: 0.35rem 0;
-    font-size: 0.6rem;
-  }
-  .tracked-show-season-episodes-container {
-    margin-top: 0;
-    grid-template-columns: repeat(auto-fill, minmax(70px, auto));
-  }
-  .tracked-show-season-episode-button-episode-number {
-    width: 100%;
-    font-size: 0.6rem;
-  }
+	.tracked-show-header-show-name {
+		font-size: 0.75rem;
+	}
+	.tracked-show-season-number {
+		padding: 0.35rem 0;
+		font-size: 0.6rem;
+	}
+	.tracked-show-season-episodes-container {
+		margin-top: 0;
+		grid-template-columns: repeat(auto-fill, minmax(70px, auto));
+	}
+	.tracked-show-season-episode-button-episode-number {
+		width: 100%;
+		font-size: 0.6rem;
+	}
 }

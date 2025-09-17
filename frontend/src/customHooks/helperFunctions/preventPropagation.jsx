@@ -1,5 +1,5 @@
 const preventPropagation = (e) => {
-  e.stopPropagation();
+	e.stopPropagation();
 };
 
 export default preventPropagation;

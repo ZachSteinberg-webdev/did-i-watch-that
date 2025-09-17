@@ -1,90 +1,90 @@
 #landing-page {
-  margin: 1rem auto 4rem auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+	margin: 1rem auto 4rem auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .landing-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .landing-header-text {
-  font-size: 3rem;
-  margin: 2rem auto;
+	font-size: 3rem;
+	margin: 2rem auto;
 }
 
 .landing-header-img {
-  height: 10rem;
+	height: 10rem;
 }
 
 .landing-header-emoji {
-  font-size: 10rem;
+	font-size: 10rem;
 }
 
 .landing-text {
-  font-size: 1.25rem;
-  width: 50%;
-  text-align: center;
+	font-size: 1.25rem;
+	width: 50%;
+	text-align: center;
 }
 
 .landing-text p {
-  margin: 1rem auto;
+	margin: 1rem auto;
 }
 
 .landing-buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .landing-buttons a {
-  /* margin: 1rem; */
-  display: flex;
-  margin: 1rem;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
+	/* margin: 1rem; */
+	display: flex;
+	margin: 1rem;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
 }
 
 .landing-buttons .landing-button {
-  min-width: 45%;
-  width: 100%;
-  margin: 0;
+	min-width: 45%;
+	width: 100%;
+	margin: 0;
 }
 
 #landing-buttons-row-1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 #landing-page-buttons-row-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 #landing-page-buttons-row-2 .landing-button {
-  min-width: 8rem;
+	min-width: 8rem;
 }
 
 #landing-page-buttons-row-3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 #landing-page-buttons-row-3 .landing-button {
-  margin: 1rem;
+	margin: 1rem;
 }
 
 /* ---------------------------------------------------------------- */
@@ -92,126 +92,126 @@
 /* ---------------------------------------------------------------- */
 /* Landscape height */
 @media (max-height: 650px) and (orientation: landscape) {
-  .landing-header-text {
-    margin: 2rem auto 1.25rem auto;
-    font-size: 2.5rem;
-  }
-  .landing-header-img {
-    height: 7.5rem;
-  }
-  .landing-text {
-    font-size: 1.1rem;
-  }
-  .landing-text p {
-    margin: 0.5rem auto;
-  }
-  .landing-buttons a {
-    margin: 0.5rem;
-  }
-  .landing-buttons button {
-    padding: 0.3em 1.2em;
-  }
+	.landing-header-text {
+		margin: 2rem auto 1.25rem auto;
+		font-size: 2.5rem;
+	}
+	.landing-header-img {
+		height: 7.5rem;
+	}
+	.landing-text {
+		font-size: 1.1rem;
+	}
+	.landing-text p {
+		margin: 0.5rem auto;
+	}
+	.landing-buttons a {
+		margin: 0.5rem;
+	}
+	.landing-buttons button {
+		padding: 0.3em 1.2em;
+	}
 }
 @media (max-height: 500px) and (orientation: landscape) {
-  .landing-header-text {
-    margin: 2rem auto 1.25rem auto;
-    font-size: 2rem;
-  }
-  .landing-header-img {
-    height: 5rem;
-  }
-  .landing-text {
-    font-size: 1rem;
-  }
-  .landing-text p {
-    margin: 0.5rem auto;
-  }
-  .landing-buttons a {
-    margin: 0.5rem;
-  }
-  .landing-buttons button {
-    padding: 0.3em 1.2em;
-  }
-  .landing-button {
-    font-size: 1rem;
-  }
+	.landing-header-text {
+		margin: 2rem auto 1.25rem auto;
+		font-size: 2rem;
+	}
+	.landing-header-img {
+		height: 5rem;
+	}
+	.landing-text {
+		font-size: 1rem;
+	}
+	.landing-text p {
+		margin: 0.5rem auto;
+	}
+	.landing-buttons a {
+		margin: 0.5rem;
+	}
+	.landing-buttons button {
+		padding: 0.3em 1.2em;
+	}
+	.landing-button {
+		font-size: 1rem;
+	}
 }
 @media (max-height: 400px) and (orientation: landscape) {
-  .landing-header-text {
-    margin: 2rem auto 1.25rem auto;
-    font-size: 1.75rem;
-  }
-  .landing-header-img {
-    height: 3rem;
-  }
-  .landing-text {
-    font-size: 0.9rem;
-    width: 75%;
-  }
-  .landing-text p {
-    margin: 0.5rem auto;
-  }
-  .landing-buttons a {
-    margin: 0.5rem;
-  }
-  .landing-buttons button {
-    padding: 0.3em 1.2em;
-  }
-  .landing-button {
-    font-size: 0.9rem;
-  }
+	.landing-header-text {
+		margin: 2rem auto 1.25rem auto;
+		font-size: 1.75rem;
+	}
+	.landing-header-img {
+		height: 3rem;
+	}
+	.landing-text {
+		font-size: 0.9rem;
+		width: 75%;
+	}
+	.landing-text p {
+		margin: 0.5rem auto;
+	}
+	.landing-buttons a {
+		margin: 0.5rem;
+	}
+	.landing-buttons button {
+		padding: 0.3em 1.2em;
+	}
+	.landing-button {
+		font-size: 0.9rem;
+	}
 }
 /* Portrait width */
 @media (max-width: 650px) and (orientation: portrait) {
-  .landing-header-text {
-    font-size: 2.5rem;
-  }
-  .landing-header-img {
-    height: 7.5rem;
-  }
-  .landing-text {
-    width: 90%;
-    font-size: 1.1rem;
-  }
+	.landing-header-text {
+		font-size: 2.5rem;
+	}
+	.landing-header-img {
+		height: 7.5rem;
+	}
+	.landing-text {
+		width: 90%;
+		font-size: 1.1rem;
+	}
 }
 @media (max-width: 525px) and (orientation: portrait) {
-  .landing-header-text {
-    font-size: 2rem;
-  }
-  .landing-header-img {
-    height: 5rem;
-  }
-  .landing-text {
-    width: 90%;
-    font-size: 1rem;
-  }
-  .landing-button {
-    font-size: 1rem;
-  }
+	.landing-header-text {
+		font-size: 2rem;
+	}
+	.landing-header-img {
+		height: 5rem;
+	}
+	.landing-text {
+		width: 90%;
+		font-size: 1rem;
+	}
+	.landing-button {
+		font-size: 1rem;
+	}
 }
 @media (max-width: 425px) and (orientation: portrait) {
-  .landing-header-text {
-    font-size: 1.75rem;
-  }
-  .landing-text {
-    width: 90%;
-    font-size: 0.9rem;
-  }
-  .landing-button {
-    font-size: 0.9rem;
-  }
+	.landing-header-text {
+		font-size: 1.75rem;
+	}
+	.landing-text {
+		width: 90%;
+		font-size: 0.9rem;
+	}
+	.landing-button {
+		font-size: 0.9rem;
+	}
 }
 @media (max-width: 375px) and (orientation: portrait) {
-  .landing-header-text {
-    font-size: 1.5rem;
-  }
-  .landing-header-img {
-  }
-  .landing-text {
-    width: 90%;
-    font-size: 0.8rem;
-  }
-  .landing-button {
-    font-size: 0.8rem;
-  }
+	.landing-header-text {
+		font-size: 1.5rem;
+	}
+	.landing-header-img {
+	}
+	.landing-text {
+		width: 90%;
+		font-size: 0.8rem;
+	}
+	.landing-button {
+		font-size: 0.8rem;
+	}
 }

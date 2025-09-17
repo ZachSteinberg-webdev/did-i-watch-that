@@ -1,333 +1,333 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  --border-width-global: 0.0625rem;
-  --border-color-global: rgba(255, 255, 255, 0.87);
-  --border-global: var(--border-width-global) solid var(--border-color-global);
-  --border-radius-global: 0.5rem;
-  --border-radius-info-button: 100%;
-  --primary-background-color: #232323;
-  --secondary-background-color: #808080;
-  --tertiary-background-color: #a7a7a7;
-  --modal-background-color: #232323;
-  --modal-section-background-color: #323232;
-  --toast-background-color: #adadad;
-  --modal-backdrop-background-color: #00000080;
-  --flash-color: #953939;
-  --delete-button-color: #953939;
-  --delete-button-color-hovered: #cf2b2b;
-  --button-background-color: #747474;
-  --button-background-color-lighter: #a7a7a7;
-  --button-background-color-darker: #686868;
-  --button-background-color-watched-episode: #38ab43;
-  --button-border-hover-color: #1d2dff;
-  --svg-font-color-info-button-instructions: #ffffff;
-  --svg-font-color-info-button-instructions-hovered: #ffffff;
-  --svg-font-color-info-button-details: #ffffff;
-  --svg-font-color-info-button-details-hovered: #ffffff;
-  --svg-fill-info-button-instructions: #5460f7;
-  --svg-fill-info-button-instructions-hovered: #a7a7a7;
-  --svg-fill-info-button-details: #a7a7a7;
-  --svg-fill-info-button-details-hovered: #5460f7;
-  --svg-fill-info-button-details-watched: #2a8834;
-  --input-font-color: #000000;
-  --input-background-color: #d3d3d3;
-  --input-border: var(--border-global);
-  --input-box-shadow: 0 0 0.5rem 0.0625rem black inset;
-  --font-color: rgba(255, 255, 255, 0.87);
-  --link-color: var(--font-color);
-  --link-color-hovered: blue;
-  --scrollbar-style: #494949 transparent;
-  --scrollbar-thumb: #494949;
-  --scrollbar-track: transparent;
-  --tippy-background-color: #a7a7a7;
-  --tippy-border-width: 0.45rem;
-  /* --tippy-border-width: 0.45rem; For use with border-width of 0.125rem */
-  --tippy-arrow-top-offset-before: 0.35rem;
-  /* --tippy-arrow-top-offset-before:0.25rem; For use with border-width of 0.125rem */
-  --tippy-arrow-top-offset-after: 0.45rem;
-  /* --tippy-arrow-top-offset-after:0.45rem; For use with border-width of 0.125rem */
-  --tippy-arrow-bottom-offset-before: 0.3rem;
-  /* --tippy-arrow-bottom-offset-before:0.25rem; For use with border-width of 0.125rem */
-  --tippy-arrow-bottom-offset-after: 0.4rem;
-  /* --tippy-arrow-bottom-offset-after:0.45rem; For use with border-width of 0.125rem */
-  color-scheme: light dark;
-  color: var(--font-color);
-  background-color: var(--primary-background-color);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	--border-width-global: 0.0625rem;
+	--border-color-global: rgba(255, 255, 255, 0.87);
+	--border-global: var(--border-width-global) solid var(--border-color-global);
+	--border-radius-global: 0.5rem;
+	--border-radius-info-button: 100%;
+	--primary-background-color: #232323;
+	--secondary-background-color: #808080;
+	--tertiary-background-color: #a7a7a7;
+	--modal-background-color: #232323;
+	--modal-section-background-color: #323232;
+	--toast-background-color: #adadad;
+	--modal-backdrop-background-color: #00000080;
+	--flash-color: #953939;
+	--delete-button-color: #953939;
+	--delete-button-color-hovered: #cf2b2b;
+	--button-background-color: #747474;
+	--button-background-color-lighter: #a7a7a7;
+	--button-background-color-darker: #686868;
+	--button-background-color-watched-episode: #38ab43;
+	--button-border-hover-color: #1d2dff;
+	--svg-font-color-info-button-instructions: #ffffff;
+	--svg-font-color-info-button-instructions-hovered: #ffffff;
+	--svg-font-color-info-button-details: #ffffff;
+	--svg-font-color-info-button-details-hovered: #ffffff;
+	--svg-fill-info-button-instructions: #5460f7;
+	--svg-fill-info-button-instructions-hovered: #a7a7a7;
+	--svg-fill-info-button-details: #a7a7a7;
+	--svg-fill-info-button-details-hovered: #5460f7;
+	--svg-fill-info-button-details-watched: #2a8834;
+	--input-font-color: #000000;
+	--input-background-color: #d3d3d3;
+	--input-border: var(--border-global);
+	--input-box-shadow: 0 0 0.5rem 0.0625rem black inset;
+	--font-color: rgba(255, 255, 255, 0.87);
+	--link-color: var(--font-color);
+	--link-color-hovered: blue;
+	--scrollbar-style: #494949 transparent;
+	--scrollbar-thumb: #494949;
+	--scrollbar-track: transparent;
+	--tippy-background-color: #a7a7a7;
+	--tippy-border-width: 0.45rem;
+	/* --tippy-border-width: 0.45rem; For use with border-width of 0.125rem */
+	--tippy-arrow-top-offset-before: 0.35rem;
+	/* --tippy-arrow-top-offset-before:0.25rem; For use with border-width of 0.125rem */
+	--tippy-arrow-top-offset-after: 0.45rem;
+	/* --tippy-arrow-top-offset-after:0.45rem; For use with border-width of 0.125rem */
+	--tippy-arrow-bottom-offset-before: 0.3rem;
+	/* --tippy-arrow-bottom-offset-before:0.25rem; For use with border-width of 0.125rem */
+	--tippy-arrow-bottom-offset-after: 0.4rem;
+	/* --tippy-arrow-bottom-offset-after:0.45rem; For use with border-width of 0.125rem */
+	color-scheme: light dark;
+	color: var(--font-color);
+	background-color: var(--primary-background-color);
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 html {
-  font-size: 16px;
+	font-size: 16px;
 }
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: var(--primary-background-color);
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+	background-color: var(--primary-background-color);
 }
 body.light-mode {
-  --border-width-global: 0.0625rem;
-  --border-color-global: rgb(0, 0, 0);
-  --border-global: var(--border-width-global) solid var(--border-color-global);
-  --primary-background-color: #dfdfdf;
-  --secondary-background-color: #8c8c8c;
-  --tertiary-background-color: #e3e3e3;
-  --modal-background-color: #8c8c8c;
-  --modal-section-background-color: #dfdfdf;
-  --toast-background-color: #dddddd;
-  --modal-backdrop-background-color: #00000080;
-  --flash-color: #953939;
-  --delete-button-color: #cd6d6d;
-  --delete-button-color-hovered: #cf2b2b;
-  --button-background-color: #a1a1a1;
-  --button-background-color-lighter: #bbbbbb;
-  --button-background-color-darker: #858585;
-  --button-background-color-watched-episode: #38ab43;
-  --button-border-hover-color: #1d2dff;
-  --svg-font-color-info-button-instructions: #ffffff;
-  --svg-font-color-info-button-instructions-hovered: #000000;
-  --svg-font-color-info-button-details: #000000;
-  --svg-font-color-info-button-details-hovered: #ffffff;
-  --svg-fill-info-button-instructions: #5460f7;
-  --svg-fill-info-button-instructions-hovered: #bbbbbb;
-  --svg-fill-info-button-details: #bbbbbb;
-  --svg-fill-info-button-details-hovered: #5460f7;
-  --svg-fill-info-button-details-watched: #2a8834;
-  --input-background-color: #bbbbbb;
-  --input-border: var(--border-width-global) black inset;
-  --input-box-shadow: 0 0 0 var(--border-width-global) black;
-  --font-color: rgba(0, 0, 0, 0.87);
-  --link-color: var(--font-color);
-  --link-color-hovered: blue;
-  --scrollbar-style: #6a6a6a transparent;
-  --scrollbar-thumb: #6a6a6a;
-  --scrollbar-track: transparent;
-  --tippy-background-color: #cccccc;
-  --tippy-border-width: 0.45rem;
-  --tippy-arrow-top-offset-before: 0.35rem;
-  --tippy-arrow-top-offset-after: 0.45rem;
-  --tippy-arrow-bottom-offset-before: 0.35rem;
-  --tippy-arrow-bottom-offset-after: 0.4rem;
-  color: var(--font-color);
-  background-color: var(--primary-background-color);
+	--border-width-global: 0.0625rem;
+	--border-color-global: rgb(0, 0, 0);
+	--border-global: var(--border-width-global) solid var(--border-color-global);
+	--primary-background-color: #dfdfdf;
+	--secondary-background-color: #8c8c8c;
+	--tertiary-background-color: #e3e3e3;
+	--modal-background-color: #8c8c8c;
+	--modal-section-background-color: #dfdfdf;
+	--toast-background-color: #dddddd;
+	--modal-backdrop-background-color: #00000080;
+	--flash-color: #953939;
+	--delete-button-color: #cd6d6d;
+	--delete-button-color-hovered: #cf2b2b;
+	--button-background-color: #a1a1a1;
+	--button-background-color-lighter: #bbbbbb;
+	--button-background-color-darker: #858585;
+	--button-background-color-watched-episode: #38ab43;
+	--button-border-hover-color: #1d2dff;
+	--svg-font-color-info-button-instructions: #ffffff;
+	--svg-font-color-info-button-instructions-hovered: #000000;
+	--svg-font-color-info-button-details: #000000;
+	--svg-font-color-info-button-details-hovered: #ffffff;
+	--svg-fill-info-button-instructions: #5460f7;
+	--svg-fill-info-button-instructions-hovered: #bbbbbb;
+	--svg-fill-info-button-details: #bbbbbb;
+	--svg-fill-info-button-details-hovered: #5460f7;
+	--svg-fill-info-button-details-watched: #2a8834;
+	--input-background-color: #bbbbbb;
+	--input-border: var(--border-width-global) black inset;
+	--input-box-shadow: 0 0 0 var(--border-width-global) black;
+	--font-color: rgba(0, 0, 0, 0.87);
+	--link-color: var(--font-color);
+	--link-color-hovered: blue;
+	--scrollbar-style: #6a6a6a transparent;
+	--scrollbar-thumb: #6a6a6a;
+	--scrollbar-track: transparent;
+	--tippy-background-color: #cccccc;
+	--tippy-border-width: 0.45rem;
+	--tippy-arrow-top-offset-before: 0.35rem;
+	--tippy-arrow-top-offset-after: 0.45rem;
+	--tippy-arrow-bottom-offset-before: 0.35rem;
+	--tippy-arrow-bottom-offset-after: 0.4rem;
+	color: var(--font-color);
+	background-color: var(--primary-background-color);
 }
 a {
-  color: var(--link-color);
-  text-decoration: underline;
+	color: var(--link-color);
+	text-decoration: underline;
 }
 a:visited {
-  color: var(--link-color);
+	color: var(--link-color);
 }
 a:-webkit-any-link {
-  color: var(--link-color);
+	color: var(--link-color);
 }
 
 a:hover {
-  text-shadow: 0 0 1px var(--font-color);
+	text-shadow: 0 0 1px var(--font-color);
 }
 a:focus {
-  outline: none;
+	outline: none;
 }
 a:focus-vislble {
-  outline: none;
+	outline: none;
 }
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  color: var(--font-color);
+	font-size: 3.2em;
+	line-height: 1.1;
+	color: var(--font-color);
 }
 button {
-  width: 100%;
-  margin: 1rem;
-  border: var(--border-global);
-  border-radius: var(--border-radius-global);
-  padding: 0.6em 1.2em;
-  font-size: 1.25rem;
-  font-weight: 500;
-  font-family: inherit;
-  color: var(--font-color);
-  background-color: var(--button-background-color);
-  cursor: pointer;
+	width: 100%;
+	margin: 1rem;
+	border: var(--border-global);
+	border-radius: var(--border-radius-global);
+	padding: 0.6em 1.2em;
+	font-size: 1.25rem;
+	font-weight: 500;
+	font-family: inherit;
+	color: var(--font-color);
+	background-color: var(--button-background-color);
+	cursor: pointer;
 }
 button:hover {
-  border-color: var(--button-border-hover-color);
+	border-color: var(--button-border-hover-color);
 }
 button:focus {
-  outline: 0.25rem auto -webkit-focus-ring-color;
-  outline: 0.25rem auto HighLight;
+	outline: 0.25rem auto -webkit-focus-ring-color;
+	outline: 0.25rem auto HighLight;
 }
 button:focus-visible {
-  outline: 0.25rem auto -webkit-focus-ring-color;
-  outline: 0.25rem auto HighLight;
+	outline: 0.25rem auto -webkit-focus-ring-color;
+	outline: 0.25rem auto HighLight;
 }
 input {
-  padding: 0.5rem;
-  border: var(--input-border);
-  border-radius: var(--border-radius-global);
-  margin: 1rem;
-  font-size: 1.25rem;
-  width: 95%;
-  text-align: center;
-  color: var(--input-font-color);
-  background-color: var(--input-background-color);
-  box-shadow: var(--input-box-shadow);
+	padding: 0.5rem;
+	border: var(--input-border);
+	border-radius: var(--border-radius-global);
+	margin: 1rem;
+	font-size: 1.25rem;
+	width: 95%;
+	text-align: center;
+	color: var(--input-font-color);
+	background-color: var(--input-background-color);
+	box-shadow: var(--input-box-shadow);
 }
 input::placeholder {
-  text-align: center;
+	text-align: center;
 }
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 svg {
-  height: auto;
-  pointer-events: none;
+	height: auto;
+	pointer-events: none;
 }
 /* Media queries */
 @media (prefers-color-scheme: light) {
-  :root {
-    --border-width-global: 0.0625rem;
-    --border-color-global: rgb(0, 0, 0);
-    --border-global: var(--border-width-global) solid var(--border-color-global);
-    --primary-background-color: #dfdfdf;
-    --secondary-background-color: #8c8c8c;
-    --tertiary-background-color: #e3e3e3;
-    --modal-background-color: #8c8c8c;
-    --modal-section-background-color: #dfdfdf;
-    --toast-background-color: #dddddd;
-    --modal-backdrop-background-color: #00000080;
-    --flash-color: #953939;
-    --delete-button-color: #cd6d6d;
-    --delete-button-color-hovered: #cf2b2b;
-    --button-background-color: #a1a1a1;
-    --button-background-color-lighter: #bbbbbb;
-    --button-background-color-darker: #858585;
-    --button-background-color-watched-episode: #38ab43;
-    --button-border-hover-color: #1d2dff;
-    --svg-font-color-info-button-instructions: #ffffff;
-    --svg-font-color-info-button-instructions-hovered: #000000;
-    --svg-font-color-info-button-details: #000000;
-    --svg-font-color-info-button-details-hovered: #ffffff;
-    --svg-fill-info-button-instructions: #5460f7;
-    --svg-fill-info-button-instructions-hovered: #bbbbbb;
-    --svg-fill-info-button-details: #bbbbbb;
-    --svg-fill-info-button-details-hovered: #5460f7;
-    --svg-fill-info-button-details-watched: #2a8834;
-    --input-background-color: #bbbbbb;
-    --input-border: var(--border-width-global) black inset;
-    --input-box-shadow: 0 0 0 var(--border-width-global) black;
-    --font-color: rgba(0, 0, 0, 0.87);
-    --link-color: var(--font-color);
-    --link-color-hovered: blue;
-    --scrollbar-style: #6a6a6a transparent;
-    --scrollbar-thumb: #6a6a6a;
-    --scrollbar-track: transparent;
-    --tippy-background-color: #cccccc;
-    --tippy-border-width: 0.45rem;
-    --tippy-arrow-top-offset-before: 0.35rem;
-    --tippy-arrow-top-offset-after: 0.45rem;
-    --tippy-arrow-bottom-offset-before: 0.35rem;
-    --tippy-arrow-bottom-offset-after: 0.4rem;
-    color: var(--font-color);
-    background-color: var(--primary-background-color);
-  }
-  body.dark-mode {
-    --border-width-global: 0.0625rem;
-    --border-color-global: rgba(255, 255, 255, 0.87);
-    --border-global: var(--border-width-global) solid var(--border-color-global);
-    --border-radius-global: 0.5rem;
-    --border-radius-info-button: 100%;
-    --primary-background-color: #232323;
-    --secondary-background-color: #808080;
-    --tertiary-background-color: #a7a7a7;
-    --modal-background-color: #232323;
-    --modal-section-background-color: #323232;
-    --toast-background-color: #adadad;
-    --modal-backdrop-background-color: #00000080;
-    --flash-color: #953939;
-    --delete-button-color: #953939;
-    --delete-button-color-hovered: #cf2b2b;
-    --button-background-color: #747474;
-    --button-background-color-lighter: #a7a7a7;
-    --button-background-color-darker: #686868;
-    --button-background-color-watched-episode: #38ab43;
-    --button-border-hover-color: #1d2dff;
-    --svg-font-color-info-button-instructions: #ffffff;
-    --svg-font-color-info-button-instructions-hovered: #ffffff;
-    --svg-font-color-info-button-details: #ffffff;
-    --svg-font-color-info-button-details-hovered: #ffffff;
-    --svg-fill-info-button-instructions: #5460f7;
-    --svg-fill-info-button-instructions-hovered: #a7a7a7;
-    --svg-fill-info-button-details: #a7a7a7;
-    --svg-fill-info-button-details-hovered: #5460f7;
-    --svg-fill-info-button-details-watched: #2a8834;
-    --input-font-color: #000000;
-    --input-background-color: #d3d3d3;
-    --input-border: var(--border-global);
-    --input-box-shadow: 0 0 0.5rem 0.0625rem black inset;
-    --font-color: rgba(255, 255, 255, 0.87);
-    --link-color: var(--font-color);
-    --link-color-hovered: blue;
-    --scrollbar-style: #494949 transparent;
-    --scrollbar-thumb: #494949;
-    --scrollbar-track: transparent;
-    --tippy-background-color: #a7a7a7;
-    --tippy-border-width: 0.45rem;
-    /* --tippy-border-width: 0.45rem; For use with border-width of 0.125rem */
-    --tippy-arrow-top-offset-before: 0.35rem;
-    /* --tippy-arrow-top-offset-before:0.25rem; For use with border-width of 0.125rem */
-    --tippy-arrow-top-offset-after: 0.45rem;
-    /* --tippy-arrow-top-offset-after:0.45rem; For use with border-width of 0.125rem */
-    --tippy-arrow-bottom-offset-before: 0.3rem;
-    /* --tippy-arrow-bottom-offset-before:0.25rem; For use with border-width of 0.125rem */
-    --tippy-arrow-bottom-offset-after: 0.4rem;
-    /* --tippy-arrow-bottom-offset-after:0.45rem; For use with border-width of 0.125rem */
-    color-scheme: light dark;
-    color: var(--font-color);
-    background-color: var(--primary-background-color);
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+	:root {
+		--border-width-global: 0.0625rem;
+		--border-color-global: rgb(0, 0, 0);
+		--border-global: var(--border-width-global) solid var(--border-color-global);
+		--primary-background-color: #dfdfdf;
+		--secondary-background-color: #8c8c8c;
+		--tertiary-background-color: #e3e3e3;
+		--modal-background-color: #8c8c8c;
+		--modal-section-background-color: #dfdfdf;
+		--toast-background-color: #dddddd;
+		--modal-backdrop-background-color: #00000080;
+		--flash-color: #953939;
+		--delete-button-color: #cd6d6d;
+		--delete-button-color-hovered: #cf2b2b;
+		--button-background-color: #a1a1a1;
+		--button-background-color-lighter: #bbbbbb;
+		--button-background-color-darker: #858585;
+		--button-background-color-watched-episode: #38ab43;
+		--button-border-hover-color: #1d2dff;
+		--svg-font-color-info-button-instructions: #ffffff;
+		--svg-font-color-info-button-instructions-hovered: #000000;
+		--svg-font-color-info-button-details: #000000;
+		--svg-font-color-info-button-details-hovered: #ffffff;
+		--svg-fill-info-button-instructions: #5460f7;
+		--svg-fill-info-button-instructions-hovered: #bbbbbb;
+		--svg-fill-info-button-details: #bbbbbb;
+		--svg-fill-info-button-details-hovered: #5460f7;
+		--svg-fill-info-button-details-watched: #2a8834;
+		--input-background-color: #bbbbbb;
+		--input-border: var(--border-width-global) black inset;
+		--input-box-shadow: 0 0 0 var(--border-width-global) black;
+		--font-color: rgba(0, 0, 0, 0.87);
+		--link-color: var(--font-color);
+		--link-color-hovered: blue;
+		--scrollbar-style: #6a6a6a transparent;
+		--scrollbar-thumb: #6a6a6a;
+		--scrollbar-track: transparent;
+		--tippy-background-color: #cccccc;
+		--tippy-border-width: 0.45rem;
+		--tippy-arrow-top-offset-before: 0.35rem;
+		--tippy-arrow-top-offset-after: 0.45rem;
+		--tippy-arrow-bottom-offset-before: 0.35rem;
+		--tippy-arrow-bottom-offset-after: 0.4rem;
+		color: var(--font-color);
+		background-color: var(--primary-background-color);
+	}
+	body.dark-mode {
+		--border-width-global: 0.0625rem;
+		--border-color-global: rgba(255, 255, 255, 0.87);
+		--border-global: var(--border-width-global) solid var(--border-color-global);
+		--border-radius-global: 0.5rem;
+		--border-radius-info-button: 100%;
+		--primary-background-color: #232323;
+		--secondary-background-color: #808080;
+		--tertiary-background-color: #a7a7a7;
+		--modal-background-color: #232323;
+		--modal-section-background-color: #323232;
+		--toast-background-color: #adadad;
+		--modal-backdrop-background-color: #00000080;
+		--flash-color: #953939;
+		--delete-button-color: #953939;
+		--delete-button-color-hovered: #cf2b2b;
+		--button-background-color: #747474;
+		--button-background-color-lighter: #a7a7a7;
+		--button-background-color-darker: #686868;
+		--button-background-color-watched-episode: #38ab43;
+		--button-border-hover-color: #1d2dff;
+		--svg-font-color-info-button-instructions: #ffffff;
+		--svg-font-color-info-button-instructions-hovered: #ffffff;
+		--svg-font-color-info-button-details: #ffffff;
+		--svg-font-color-info-button-details-hovered: #ffffff;
+		--svg-fill-info-button-instructions: #5460f7;
+		--svg-fill-info-button-instructions-hovered: #a7a7a7;
+		--svg-fill-info-button-details: #a7a7a7;
+		--svg-fill-info-button-details-hovered: #5460f7;
+		--svg-fill-info-button-details-watched: #2a8834;
+		--input-font-color: #000000;
+		--input-background-color: #d3d3d3;
+		--input-border: var(--border-global);
+		--input-box-shadow: 0 0 0.5rem 0.0625rem black inset;
+		--font-color: rgba(255, 255, 255, 0.87);
+		--link-color: var(--font-color);
+		--link-color-hovered: blue;
+		--scrollbar-style: #494949 transparent;
+		--scrollbar-thumb: #494949;
+		--scrollbar-track: transparent;
+		--tippy-background-color: #a7a7a7;
+		--tippy-border-width: 0.45rem;
+		/* --tippy-border-width: 0.45rem; For use with border-width of 0.125rem */
+		--tippy-arrow-top-offset-before: 0.35rem;
+		/* --tippy-arrow-top-offset-before:0.25rem; For use with border-width of 0.125rem */
+		--tippy-arrow-top-offset-after: 0.45rem;
+		/* --tippy-arrow-top-offset-after:0.45rem; For use with border-width of 0.125rem */
+		--tippy-arrow-bottom-offset-before: 0.3rem;
+		/* --tippy-arrow-bottom-offset-before:0.25rem; For use with border-width of 0.125rem */
+		--tippy-arrow-bottom-offset-after: 0.4rem;
+		/* --tippy-arrow-bottom-offset-after:0.45rem; For use with border-width of 0.125rem */
+		color-scheme: light dark;
+		color: var(--font-color);
+		background-color: var(--primary-background-color);
+		font-synthesis: none;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 }
 /* Width */
 @media (min-width: 2100px) {
-  html {
-    font-size: 20px;
-  }
+	html {
+		font-size: 20px;
+	}
 }
 @media (min-width: 2600px) {
-  html {
-    font-size: 26px;
-  }
+	html {
+		font-size: 26px;
+	}
 }
 @media (min-width: 3000px) {
-  html {
-    font-size: 30px;
-  }
+	html {
+		font-size: 30px;
+	}
 }
 @media (min-width: 4000px) {
-  html {
-    font-size: 40px;
-  }
+	html {
+		font-size: 40px;
+	}
 }
 @media (min-width: 5000px) {
-  html {
-    font-size: 50px;
-  }
+	html {
+		font-size: 50px;
+	}
 }
 @media (min-width: 7000px) {
-  html {
-    font-size: 60px;
-  }
+	html {
+		font-size: 60px;
+	}
 }

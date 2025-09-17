@@ -1,9 +1,9 @@
 .spinner {
-  position: fixed;
-  z-index: 2;
+	position: fixed;
+	z-index: 2;
 }
 .spinner-svg {
-  shape-rendering: auto;
-  display: block;
-  background: rgb(255, 255, 255);
+	shape-rendering: auto;
+	display: block;
+	background: rgb(255, 255, 255);
 }

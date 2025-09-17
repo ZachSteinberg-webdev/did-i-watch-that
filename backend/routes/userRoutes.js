@@ -1,50 +1,50 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const cors = require("cors");
+const cors = require('cors');
 const {
-  sayHello,
-  register,
-  login,
-  logout,
-  singleUser,
-  getUser,
-  updateUser,
-  updatePassword,
-  toggleDarkMode,
-  migrateGuestData,
-} = require("../controllers/userControllers.js");
+	sayHello,
+	register,
+	login,
+	logout,
+	singleUser,
+	getUser,
+	updateUser,
+	updatePassword,
+	toggleDarkMode,
+	migrateGuestData
+} = require('../controllers/userControllers.js');
 
 // Middleware
-const { isAuthenticated } = require("../middleware/auth.js");
+const { isAuthenticated } = require('../middleware/auth.js');
 
 // Test that API is up and running
-router.get("/sayHello", sayHello); // Exposed at /api/sayHello
+router.get('/sayHello', sayHello); // Exposed at /api/sayHello
 
 // Register user
-router.post("/register", register);
+router.post('/register', register);
 
 // Log in user
-router.post("/login", login);
+router.post('/login', login);
 
 // Log out user
-router.get("/logout", logout);
+router.get('/logout', logout);
 
 // Find single user
-router.get("/user/:id", singleUser);
+router.get('/user/:id', singleUser);
 
 // Get user profile
-router.get("/getUser", isAuthenticated, getUser);
+router.get('/getUser', isAuthenticated, getUser);
 
 // Update user profile
-router.post("/updateUser", isAuthenticated, updateUser);
+router.post('/updateUser', isAuthenticated, updateUser);
 
 // Update user password
-router.post("/updatePassword", isAuthenticated, updatePassword);
+router.post('/updatePassword', isAuthenticated, updatePassword);
 
 // Toggle user dark mode setting
-router.post("/toggleDarkMode", isAuthenticated, toggleDarkMode);
+router.post('/toggleDarkMode', isAuthenticated, toggleDarkMode);
 
 // Migrate guest data to authenticated account
-router.post("/migrateGuestData", isAuthenticated, migrateGuestData);
+router.post('/migrateGuestData', isAuthenticated, migrateGuestData);
 
 module.exports = router;

@@ -1,173 +1,173 @@
 #dashboard-page {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .dashboard-header {
-  font-size: 2.25rem;
+	font-size: 2.25rem;
 }
 .dashboard-text {
-  max-width: 500px;
-  margin: 0.25rem 0;
+	max-width: 500px;
+	margin: 0.25rem 0;
 }
 #user-update-form {
-  width: 75%;
+	width: 75%;
 }
 .dashboard-text-small {
-  font-size: 0.7rem;
-  letter-spacing: -0.5px;
+	font-size: 0.7rem;
+	letter-spacing: -0.5px;
 }
 .dashboard-text-extra-small {
-  display: none;
-  max-width: 70%;
-  font-size: 0.7rem;
-  letter-spacing: -0.5px;
+	display: none;
+	max-width: 70%;
+	font-size: 0.7rem;
+	letter-spacing: -0.5px;
 }
 #user-update-form input {
-  box-sizing: border-box;
-  width: 100%;
+	box-sizing: border-box;
+	width: 100%;
 }
 #user-update-form button {
-  width: 100%;
-  padding: 0.5em 1.2em;
+	width: 100%;
+	padding: 0.5em 1.2em;
 }
 .form-group-one {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .form-group-two {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 /* ---------------------------------------------------------------- */
 /* Media queries */
 /* ---------------------------------------------------------------- */
 /* Landscape height */
 @media (max-height: 700px) and (orientation: landscape) {
-  #dashboard-page {
-    margin: 3rem auto 2rem auto;
-  }
-  .dashboard-header {
-    margin: 0.5rem;
-    font-size: 2rem;
-  }
-  #user-update-form input {
-    margin: 0.75rem auto;
-  }
-  #user-update-form button {
-    margin: 0.75rem auto;
-  }
+	#dashboard-page {
+		margin: 3rem auto 2rem auto;
+	}
+	.dashboard-header {
+		margin: 0.5rem;
+		font-size: 2rem;
+	}
+	#user-update-form input {
+		margin: 0.75rem auto;
+	}
+	#user-update-form button {
+		margin: 0.75rem auto;
+	}
 }
 @media (max-height: 675px) and (orientation: landscape) {
-  .dashboard-header {
-    margin: 1rem auto 0.5rem auto;
-  }
+	.dashboard-header {
+		margin: 1rem auto 0.5rem auto;
+	}
 }
 @media (max-height: 650px) and (orientation: landscape) {
-  #user-update-form input {
-    padding: 0.25rem 0.5rem;
-  }
-  #user-update-form button {
-    padding: 0.25rem 0.5rem;
-  }
+	#user-update-form input {
+		padding: 0.25rem 0.5rem;
+	}
+	#user-update-form button {
+		padding: 0.25rem 0.5rem;
+	}
 }
 @media (max-height: 600px) and (orientation: landscape) {
-  .dashboard-header {
-    font-size: 1.5rem;
-  }
-  #user-update-form input {
-    font-size: 1rem;
-  }
-  #user-update-form button {
-    font-size: 1rem;
-  }
+	.dashboard-header {
+		font-size: 1.5rem;
+	}
+	#user-update-form input {
+		font-size: 1rem;
+	}
+	#user-update-form button {
+		font-size: 1rem;
+	}
 }
 @media (max-height: 550px) and (orientation: landscape) {
-  .dashboard-text-small {
-    display: none;
-  }
-  .dashboard-text-extra-small {
-    display: block;
-  }
-  .form-inputs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  .form-group-one {
-    margin: 0;
-    width: 48%;
-  }
-  .form-group-two {
-    margin: 0;
-    width: 48%;
-  }
-  #user-update-form input {
-    margin: 0.5rem auto;
-    box-sizing: border-box;
-  }
-  #user-update-form button {
-    margin: 0.5rem auto;
-  }
+	.dashboard-text-small {
+		display: none;
+	}
+	.dashboard-text-extra-small {
+		display: block;
+	}
+	.form-inputs {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+	.form-group-one {
+		margin: 0;
+		width: 48%;
+	}
+	.form-group-two {
+		margin: 0;
+		width: 48%;
+	}
+	#user-update-form input {
+		margin: 0.5rem auto;
+		box-sizing: border-box;
+	}
+	#user-update-form button {
+		margin: 0.5rem auto;
+	}
 }
 @media (max-height: 350px) and (orientation: landscape) {
-  .dashboard-header {
-    margin: 1rem auto 0rem auto;
-    font-size: 1.25rem;
-  }
-  .dashboard-text {
-    margin: 0.125rem auto;
-    font-size: 0.9rem;
-  }
-  #user-update-form input {
-    font-size: 0.9rem;
-  }
-  #user-update-form button {
-    font-size: 0.9rem;
-  }
+	.dashboard-header {
+		margin: 1rem auto 0rem auto;
+		font-size: 1.25rem;
+	}
+	.dashboard-text {
+		margin: 0.125rem auto;
+		font-size: 0.9rem;
+	}
+	#user-update-form input {
+		font-size: 0.9rem;
+	}
+	#user-update-form button {
+		font-size: 0.9rem;
+	}
 }
 /* Portrait height */
 @media (max-height: 700px) and (orientation: portrait) {
-  #dashboard-page {
-    margin: 3rem auto 1rem auto;
-  }
-  .dashboard-header {
-    margin: auto;
-  }
+	#dashboard-page {
+		margin: 3rem auto 1rem auto;
+	}
+	.dashboard-header {
+		margin: auto;
+	}
 }
 @media (max-height: 625px) and (orientation: portrait) {
-  .dashboard-header {
-    margin: 0.5rem;
-    font-size: 2rem;
-  }
-  #user-update-form input {
-    margin: 0.75rem auto;
-  }
-  #user-update-form button {
-    margin: 0.75rem auto;
-  }
+	.dashboard-header {
+		margin: 0.5rem;
+		font-size: 2rem;
+	}
+	#user-update-form input {
+		margin: 0.75rem auto;
+	}
+	#user-update-form button {
+		margin: 0.75rem auto;
+	}
 }
 @media (max-height: 600px) and (orientation: portrait) {
-  #user-update-form input {
-    margin: 0.5rem auto;
-  }
-  #user-update-form button {
-    margin: 0.5rem auto;
-  }
+	#user-update-form input {
+		margin: 0.5rem auto;
+	}
+	#user-update-form button {
+		margin: 0.5rem auto;
+	}
 }
 @media (max-height: 575px) and (orientation: portrait) {
-  #user-update-form input {
-    padding: 0.25rem 0.5rem;
-  }
-  #user-update-form button {
-    padding: 0.25rem 0.5rem;
-  }
+	#user-update-form input {
+		padding: 0.25rem 0.5rem;
+	}
+	#user-update-form button {
+		padding: 0.25rem 0.5rem;
+	}
 }
