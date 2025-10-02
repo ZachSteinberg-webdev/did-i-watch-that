@@ -37,18 +37,6 @@ app.use(
 	})
 );
 
-// app.use(helmet({
-// 	contentSecurityPolicy: {
-// 		directives: {
-// 			"script-src": ["'self'", "'unsafe-inline'", "api.tvmaze.com"],
-// 			"default-src": ["'self'", "api.tvmaze.com"]
-// 		},
-// 	},
-// 	referrerPolicy: {
-// 		policy: "same-origin"
-// 	},
-// }),);
-
 // Body Parser middleware
 app.use(bodyParser.json());
 

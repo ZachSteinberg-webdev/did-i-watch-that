@@ -7,9 +7,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-#ChatGPT Log
-CODEx_SESSION_LOG.md
-
 dist
 dist-ssr
 *.local
