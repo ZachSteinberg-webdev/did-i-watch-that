@@ -9,7 +9,7 @@ export default function Footer() {
 			<p>
 				&#x00A9; 2024{' '}
 				<Link
-					to='http://www.ZachSteinberg.com'
+					to='https://www.ZachSteinberg.com'
 					className='portfolio-link'
 					target='_blank'
 					rel='noreferrer'
