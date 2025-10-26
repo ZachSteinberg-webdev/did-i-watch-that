@@ -1,4 +1,4 @@
-Did I Watch That?!?!
+# Did I Watch That?!?!
 
 This is my TV show tracker. I built it because I kept forgetting which seasons and episodes I’d already watched, especially for long-running shows like The Simpsons, It’s Always Sunny in Philadelphia, etc. The app lets me search for any show, pull live episode data from a public TV database via an API (TVmaze), mark what I’ve already seen, and then quickly see where I left off — without needing to create an account first.
 
